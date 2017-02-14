@@ -1,1 +1,12 @@
 # oosterplasdoet
+-framework_dir
+-public_html
+    -js
+    -img
+    -css
+    -index.php
+    -protected/private
+        -controllers
+        -models
+        -views
+        -etc
