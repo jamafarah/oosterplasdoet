@@ -14,6 +14,8 @@ class SignupAppendix extends Model {
 
 	protected $dates = ['deleted_at'];
 
+    protected $fillable = array('first_name', 'last_name', 'birthdate');
+
 	public function signups()
 	{
 		return $this->belongsTo('Signup', 'signup_id');

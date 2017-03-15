@@ -21,7 +21,7 @@ class Signup extends Model {
 
 	public function appendices()
 	{
-		return $this->hasMany('SignupAppendix', 'signup_id');
+		return $this->hasMany('SignupAppendix');
 	}
 
 }

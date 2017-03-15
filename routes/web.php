@@ -11,12 +11,16 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/test', function () {
     return view('welcome');
 });
 
 
 
 
-Route::get('contact', 'SignUpController@getSignUp');
-Route::post('contact', 'SignUpController@postSignUp');
+Route::get('events', 'EventController@index')->name('event');
+Route::get('event/{id}', 'EventController@show')->name('eventShow');
+
+
+Route::get('signup/{id}', 'SignUpController@getSignUp')->name("signup");
+Route::post('signup/{id}', 'SignUpController@postSignUp');
