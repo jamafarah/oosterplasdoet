@@ -30,7 +30,6 @@ class EventController extends Controller {
     }
 
     public function show(Request $request, $id) {
-        // Validate fields
         try {
             $event = Event::findOrFail($id);
 
@@ -40,5 +39,9 @@ class EventController extends Controller {
         }
 
         return view('event.show')->with(compact('event'));
+    }
+
+    public function signup(Request $request, $id) {
+
     }
 }
