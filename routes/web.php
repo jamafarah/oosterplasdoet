@@ -15,8 +15,13 @@ Route::get('/test', function () {
     return view('welcome');
 });
 
+Route::get('header', function(){
+    return view('header');
+});
 
-
+Route::get('event', function(){
+    return view('event');
+});
 
 Route::get('events', 'EventController@index')->name('event');
 Route::get('event/{id}', 'EventController@show')->name('eventShow');
