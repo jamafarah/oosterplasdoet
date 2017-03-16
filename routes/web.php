@@ -23,6 +23,10 @@ Route::get('event', function(){
     return view('event');
 });
 
+Route::get('eventOverview', function(){
+    return view('eventOverview');
+});
+
 Route::get('events', 'EventController@index')->name('event');
 Route::get('event/{id}', 'EventController@show')->name('eventShow');
 
