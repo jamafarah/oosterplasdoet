@@ -26,6 +26,39 @@
         </ul>
     </nav>
 </header>
+<div class="banner row-6 orange-background" style="background-image: url(http://www.panoramawinkel.nl/upload/products/1394527120-art-Panoramafoto_Den_Bosch_Oeteldonk_Markt_Oeteldonkse_dinsdag_S_00173-2500.jpg);">
+    <h1 class="white">b-battle  </h1>
+    <h1 class="white"><br> 6/9/2017</h1>
+</div>
+<div class="container raised">
+    <div class="slogan col-md-8">
+        <h1 class="orange">B-BATTLE</h1>
+        <p>
+            Het is alweer voorbij. We kijken terug op 2 mooie dagen baggerloop en B-Battle. Mooi weer, enthousiaste kinderen en Battle teams. We weten het nu al zeker. Volgend jaar zijn we er weer! Zie meer hier
 
+            Winnaar B-Battle 2016: Zeilvereniging Oosterplas.
+
+        </p>
+        <h2 class="vague-orange">BAGGERLOOP 2016</h2>
+        <p>
+            Baggerloop is een jaarlijks evenement dat georganiseerd wordt in samenwerking met ‘S-PORT. Basisschool scholieren van diverse scholen lopen op vrijdagochtend een rondje rond de Oosterplas en moeten daarbij allerlei obstakels trotseren.
+
+            Dit jaar liepen er weer ongeveer 650 leerlingen mee. Het was opnieuw een groot succes.
+
+            Het weer was mooi en de kinderen enthousiast. Voor meer foto’s kunt u terecht op onze facebook pagina. OosterplasDOET
+        </p>
+    </div>
+    <div class="col-md-4 side-form">
+        <h2 class="orange">inschrijven</h2>
+        <hr>
+        <form class="event-form" action="#">
+            <input placeholder="naam" name="naam" type="text">
+            <input placeholder="geboorte datum" name="geboortedatum" type="date">
+            <input placeholder="aantal deelnemers" name="aantal" type="number">
+            <input placeholder="email" name="email" type="email">
+            <input class="orange-background" value="inschrijven" type="submit">
+        </form>
+    </div>
+</div>
 </body>
 </html>
