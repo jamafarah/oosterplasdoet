@@ -3,7 +3,7 @@
             <div class="blurred contentPane">
                 <h3 class="orange">{{ $event->name }}</h3>
                 <p>
-                    {{ $event->content }}
+                    {!! $event->content !!}
                 </p>
                 <button class="more vague-orange-background"><a style="color: #fff" href="{{ route('eventShow', $event->id) }}">Lees meer</a></button>
             </div>

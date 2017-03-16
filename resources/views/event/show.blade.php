@@ -10,7 +10,7 @@
     <div class="slogan col-md-8">
         <h1 class="orange">{{ strtoupper($event->name) }}</h1>
         <p>
-            {{ $event->content }}
+            {!! $event->content !!}
         </p>
     </div>
     <div class="col-md-4 side-form">
