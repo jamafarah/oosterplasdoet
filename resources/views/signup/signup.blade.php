@@ -88,7 +88,7 @@ $(document).ready(function() {
             "<label for=\"appendices[" + newId + "][birthdate]\">Geboortedatum</label>"+
             "<input required=\"required\" name=\"appendices[" + newId + "][birthdate]\" type=\"date\" id=\"appendices[0][birthdate]\">"+
             "<br />"+
-            "<span class=\"remove\">remove</span>"+
+            "<span class=\"remove\">Verwijder</span>"+
         "</div>";
 
         $(".appendices").append(element);

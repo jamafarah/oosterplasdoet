@@ -18,7 +18,7 @@ Route::get('/test', function () {
 
 
 
-Route::get('events', 'EventController@index')->name('event');
+Route::get('events', 'EventController@index')->name('events');
 Route::get('event/{id}', 'EventController@show')->name('eventShow');
 
 

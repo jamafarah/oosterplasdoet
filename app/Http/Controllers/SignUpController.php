@@ -11,7 +11,7 @@ namespace App\Http\Controllers;
 use App\Event;
 use App\Signup;
 use App\SignupAppendix;
-use Carbon\Carbon;
+use Mail;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
@@ -27,7 +27,7 @@ class SignUpController extends Controller {
             abort(404);
         }
 
-        return view('forms.signup')->with(compact('event'));
+        return view('signup.signup')->with(compact('event'));
     }
 
     public function postSignUp(Request $request, $id) {
@@ -55,30 +55,44 @@ class SignUpController extends Controller {
 
             $signup->save();
 
-
             $signupAppendices = [];
-            foreach($request->get('appendices') AS $appendix) {
-                $signupAppendix = new SignupAppendix();
-                $signupAppendix->fill($appendix);
-                $signupAppendix->signup_id = $signup->id;
+            if (is_array($request->get('appendices'))) {
+                foreach($request->get('appendices') AS $appendix) {
+                    $signupAppendix = new SignupAppendix();
+                    $signupAppendix->fill($appendix);
+                    $signupAppendix->signup_id = $signup->id;
 
-                $signupAppendix->save();
-//                $signup->appendices()->save($signupAppendix);
+                    $signupAppendix->save();
+                    $signupAppendices[] = $signupAppendix;
+//                  $signup->appendices()->save($signupAppendix);
+                }
             }
 
+        $this->sendSignupEmail($event, $signup, $signupAppendices);
 
-
-            // Generate email
-
-
-            // Send email
-
+            return view('signup.success')->with(compact('event'));
         } catch (ModelNotFoundException $e) {
             abort(404);
         } catch (ValidationException $e) {
             //dd($e->validator->failed());
-            return view('forms.signup')->with(compact('event'));
+            return view('signup.signup')->with(compact('event'));
         }
 
     }
-} 
+
+
+    private function sendSignupEmail($event, $signup, $signupAppendices) {
+
+
+        // Generate email
+        Mail::send('mails.signup', [
+            'event' => $event,
+            'signup' => $signup,
+            'signupAppendices' => $signupAppendices,
+        ], function ($m) use ($signup) {
+            $m->from(config('app.email'), 'Oosterplas inschrijving');
+
+            $m->to(config('app.email'), "Oosterplas")->subject('Inschrijving evenement');
+        });
+    }
+}
