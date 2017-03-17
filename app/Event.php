@@ -16,7 +16,7 @@ class Event extends Model {
 
 	public function signups()
 	{
-		return $this->hasMany('Signup', 'event_id');
+		return $this->hasMany(Signup::class);
 	}
 
 }
