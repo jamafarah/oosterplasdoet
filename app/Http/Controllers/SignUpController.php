@@ -47,13 +47,12 @@ class SignUpController extends Controller {
 
 
             $signup = new Signup();
-            $signup->event_id = 1;
             $signup->emailaddress = $request->get("emailaddress");
             $signup->first_name = $request->get("first_name");
             $signup->last_name = $request->get("last_name");
             $signup->birthdate = '2017-03-07';
 
-            $signup->save();
+            $event->signups()->save($signup);
 
             $signupAppendices = [];
             if (is_array($request->get('appendices'))) {
@@ -62,9 +61,9 @@ class SignUpController extends Controller {
                     $signupAppendix->fill($appendix);
                     $signupAppendix->signup_id = $signup->id;
 
-                    $signupAppendix->save();
-                    $signupAppendices[] = $signupAppendix;
-//                  $signup->appendices()->save($signupAppendix);
+                    //$signupAppendix->save();
+                    //$signupAppendices[] = $signupAppendix;
+                    $signup->appendices()->save($signupAppendix);
                 }
             }
 

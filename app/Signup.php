@@ -16,12 +16,12 @@ class Signup extends Model {
 
 	public function event()
 	{
-		return $this->belongsTo('Event', 'event_id');
+		return $this->belongsTo(Event::class);
 	}
 
 	public function appendices()
 	{
-		return $this->hasMany('SignupAppendix');
+		return $this->hasMany(SignupAppendix::class);
 	}
 
 }

@@ -18,7 +18,7 @@ class SignupAppendix extends Model {
 
 	public function signups()
 	{
-		return $this->belongsTo('Signup', 'signup_id');
+		return $this->belongsTo(Signup::class);
 	}
 
 }
