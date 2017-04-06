@@ -230,12 +230,15 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
 
-        'Carbon' => 'Carbon\Carbon',
+        'Carbon' => Carbon\Carbon::class,
         'Form' => Collective\Html\FormFacade::class,
         'Html' => Collective\Html\HtmlFacade::class,
 
     ],
 
-    'email' => 'inschrijving@oosterplasdoet.nl',
+    'emails' => [
+        'signup' => 'inschrijving@oosterplasdoet.nl',
+        'contact' => 'contact@oosterplasdoet.nl',
+    ],
 
 ];

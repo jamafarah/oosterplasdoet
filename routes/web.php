@@ -10,16 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('index');
 });
 
-Route::get('sponsoren', function () {
-	return view('sponsoren');
-});
-	
-/*
 Route::get('header', function(){
     return view('header');
 });
@@ -31,6 +26,9 @@ Route::get('event', function(){
 Route::get('eventOverview', function(){
     return view('eventOverview');
 });*/
+
+Route::get('/', 'IndexController@getIndex')->name('index');
+Route::post('/', 'IndexController@postIndex');
 
 Route::get('events', 'EventController@index')->name('events');
 Route::get('event/{id}', 'EventController@show')->name('eventShow');
@@ -52,4 +50,8 @@ Route::get('bewoners', function () {
 
 Route::get('about', function () {
     return view('underconstruction');
+});
+
+Route::get('sponsoren', function () {
+    return view('sponsoren');
 });

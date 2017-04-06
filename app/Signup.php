@@ -23,5 +23,4 @@ class Signup extends Model {
 	{
 		return $this->hasMany(SignupAppendix::class);
 	}
-
 }

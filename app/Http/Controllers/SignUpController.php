@@ -81,17 +81,14 @@ class SignUpController extends Controller {
 
 
     private function sendSignupEmail($event, $signup, $signupAppendices) {
-
-
         // Generate email
         Mail::send('mails.signup', [
             'event' => $event,
             'signup' => $signup,
             'signupAppendices' => $signupAppendices,
         ], function ($m) use ($signup) {
-            $m->from(config('app.email'), 'Oosterplas inschrijving');
-
-            $m->to(config('app.email'), "Oosterplas")->subject('Inschrijving evenement');
+            $m->from(config('app.emails.signup'), 'Oosterplas inschrijving');
+            $m->to(config('app.emails.signup'), "Oosterplas")->subject('Inschrijving evenement');
         });
     }
 }

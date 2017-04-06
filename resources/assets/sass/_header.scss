@@ -170,14 +170,41 @@ header{
     background-position: top;
   }
 }
+.socialmedia-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.event-form{
-  input {
+.social-contact {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+i.fa.fa-5x {
+  background-color: #ef6c33;
+  color: white;
+  border:1px solid white;
+  box-sizing: border-box;
+  margin: 30px;
+  padding: 20px;
+  width: 110px;
+  transition: .3s ease-in-out;
+}
+i.fa.fa-5x:hover {
+  color: #ef6c33;
+  background-color:white;
+  border: 1px solid #ef6c33
+}
+
+.event-form, .feedback-form{
+  input, textarea {
     width: 100%;
     margin: 5px 0;
     border: none;
     border-left: 1px solid #ef6c33;
     border-bottom: 1px solid #ef6c33;
+    resize: none;
   }
   input[type="submit"] {
     border: none;
