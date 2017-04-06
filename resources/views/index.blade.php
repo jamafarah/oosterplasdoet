@@ -101,7 +101,7 @@
                     Wij zoeken graag naar feedback voor onze site en organiatie. <br>
                     Heb jij nog feedback of een idee voor ons? Laat dan hier achter. <br>
                     <br>
-                    Vul evenuteel je naam en email adres in zodat wij je terug kunnen mailen!
+                    Vul je naam en email adres in zodat wij je terug kunnen mailen!
                 </p>
                     @if (count($errors) > 0)
                         <div class="alert alert-danger">
@@ -114,20 +114,20 @@
                     @endif
                     {!! Form::open(['route' => 'index'], ['class' => 'feedback-form']) !!}
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                             {!! Form::label('first_name', 'Voornaam') !!}
 
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-8">
                             {!! Form::label('last_name', 'Achternaam') !!}
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-4">
                             {!! Form::text('first_name', Request::get('first_name'), ['required'=>'required']) !!}
 
                         </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-8">
                             {!! Form::text('last_name', Request::get('last_name'), ['required'=>'required']) !!}
                         </div>
                     </div>
@@ -139,6 +139,11 @@
                     <div class="row">
                         <div class="col-lg-12">
                             {!! Form::email('emailaddress', Request::get('emailaddress'), ['required'=>'required']) !!}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            {!! Form::label('message', 'Bericht') !!}
                         </div>
                     </div>
                     <div class="row">
