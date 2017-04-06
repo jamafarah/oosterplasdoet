@@ -6,6 +6,7 @@
             <a href="{{ url('/bedrijven') }}">bedrijven</a>
             <a href="{{ url('/activiteiten') }}">activiteiten kalender</a>
             <a href="{{ url('/bewoners') }}">buurtbewoners</a>
+            <a href="{{ url('/sponsoren') }}">onze sponsoren</a>
             <a href="{{ url('/about') }}">over ons</a>
         </ul>
     </nav>

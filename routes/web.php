@@ -14,6 +14,11 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('sponsoren', function () {
+	return view('sponsoren');
+});
+	
 /*
 Route::get('header', function(){
     return view('header');
