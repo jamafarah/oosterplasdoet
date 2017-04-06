@@ -4,11 +4,14 @@
   src: url("../font/bebas/bebasneue-webfont.woff"); }
 body {
   margin: 0; }
-  body h1, body h2, body h3, body p, body button {
+  body h1, body h2, body h3, body button {
     font-weight: 100;
     font-family: "Bebas Neue"; }
-  body p {
-    font-size: 18px; }
+  body p{
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
 
 header {
   padding: 10px;
@@ -50,7 +53,13 @@ header {
 
 .raised {
   margin-top: -60px;
-  padding-top: 20px; }
+  padding-top: 20px;
+}
+
+.image {
+  min-height: 230px;
+  background-size: cover;
+}
 
 .slogan {
   text-align: center;
@@ -87,8 +96,6 @@ header {
 .vague-orange-background {
   background-color: #db942e; }
 
-.services {
-  height: 500px; }
 
 .serviceBlock {
   height: inherit;
@@ -96,9 +103,8 @@ header {
   padding: 50px;
   background-blend-mode: multiply;
   background-size: cover; }
-  .serviceBlock .button {
-    float: right;
-    margin-right: 2em;
+
+  .serviceBlock button {
     border: none;
     color: white;
     font-size: 1em;
@@ -109,16 +115,21 @@ header {
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
       border: 0;
+    float: right;
+    margin-right: 2em;
   }
     .serviceBlock .button:hover {
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); }
-  .serviceBlock .contentPane {
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 3px;
-    height: 100%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-    box-sizing: border-box;
-    padding: 10px; }
+.serviceBlock .contentPane {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 3px;
+  min-height: 400px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  padding: 10px;
+  position: relative;
+}
+
 
 .highlightRow {
   margin-top: 50px; }
@@ -176,39 +187,48 @@ i.fa.fa-5x:hover {
   border-left: 2px solid #ef6c33; }
 
 .row-1 {
-  height: 8.33vh; }
+  min-height: 8.33vh; }
 
 .row-2 {
-  height: 16.67vh; }
+  min-height: 16.67vh; }
 
 .row-3 {
-  height: 25vh; }
+  min-height: 25vh; }
 
 .row-4 {
-  height: 33.33vh; }
+  min-height: 33.33vh; }
 
 .row-5 {
-  height: 41.67vh; }
+  min-height: 41.67vh; }
 
 .row-6 {
-  height: 50vh; }
+  min-height: 50vh; }
 
 .row-7 {
-  height: 58.33vh; }
+  min-height: 58.33vh; }
 
 .row-8 {
-  height: 66.67vh; }
+  min-height: 66.67vh; }
 
 .row-9 {
-  height: 75vh; }
+  min-height: 75vh; }
 
 .row-10 {
-  height: 83.33vh; }
+  min-height: 83.33vh; }
 
 .row-11 {
-  height: 91.67vh; }
+  min-height: 91.67vh; }
 
 .row-12 {
-  height: 100vh; }
+  min-height: 100vh; }
 
 /*# sourceMappingURL=app.css.map */
+@media (max-width: 1024px) {
+  .raised{
+    margin-top: 0px;
+  }
+  .container{
+    width: auto;
+    margin-left: auto;
+  }
+}
