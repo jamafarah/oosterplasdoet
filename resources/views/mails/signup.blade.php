@@ -1,6 +1,6 @@
 <p>Beste Oosterplas,</p>
 <p>Er is een inschrijving binnen gekomen voor het evenement: {{ $event->name }}.</p>
-<p>Inschrijvings details:</p>
+<p>Inschrijvingsdetails:</p>
 Naam: {{ $signup->first_name }} {{ $signup->last_name }}<br />
 Emailadres: {{ $signup->emailaddress }}<br />
 Geboortedatum: {{ $signup->birthdate }}<br />
