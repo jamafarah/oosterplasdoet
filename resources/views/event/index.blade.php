@@ -24,7 +24,10 @@
     </div>
     <div class="container">
         <div class="row highlightRow">
-            <div class="serviceBlock col-md-4 orange-background" style="background-image: url(http://wvua23.com/wp-content/uploads/2015/04/school-stock.jpg)">
+            <div class="serviceBlock col-md-4">
+                <div class="image" style="background-image: url(http://wvua23.com/wp-content/uploads/2015/04/school-stock.jpg)">
+
+                </div>
                 <div class="blurred contentPane">
                     <h3 class="vague-green">B-battle</h3>
                     <p>
@@ -35,7 +38,10 @@
                     <a href="" class="button more vague-orange-background">Lees meer</a>
                 </div>
             </div>
-            <div class="serviceBlock col-md-4 orange-background" style="background-image: url(http://wvua23.com/wp-content/uploads/2015/04/school-stock.jpg)">
+            <div class="serviceBlock col-md-4">
+                <div class="image" style="background-image: url(http://wvua23.com/wp-content/uploads/2015/04/school-stock.jpg)">
+
+                </div>
                 <div class="blurred contentPane">
                     <h3 class="vague-green">B-battle</h3>
                     <p>
@@ -46,7 +52,10 @@
                     <a href="" class="button more vague-orange-background">Lees meer</a>
                 </div>
             </div>
-            <div class="serviceBlock col-md-4 orange-background" style="background-image: url(http://wvua23.com/wp-content/uploads/2015/04/school-stock.jpg)">
+            <div class="serviceBlock col-md-4">
+                <div class="image" style="background-image: url(http://wvua23.com/wp-content/uploads/2015/04/school-stock.jpg)">
+
+                </div>
                 <div class="blurred contentPane">
                     <h3 class="vague-green">B-battle</h3>
                     <p>
@@ -57,6 +66,7 @@
                     <a href="" class="button more vague-orange-background">Lees meer</a>
                 </div>
             </div>
+
         </div>
     </div>
 @endsection
