@@ -112,7 +112,7 @@
                             </ul>
                         </div>
                     @endif
-                    {!! Form::open(['route' => 'index'], ['class' => 'feedback-form']) !!}
+                    {!! Form::open(['route' => 'index', 'class' => 'feedback-form']) !!}
                     <div class="row">
                         <div class="col-lg-4">
                             {!! Form::label('first_name', 'Voornaam') !!}
