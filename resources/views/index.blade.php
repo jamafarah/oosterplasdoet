@@ -2,12 +2,12 @@
 
 
 @section('content')
-    <div class="banner row-6 vague-green-background" style="background-image: url(http://www.oosterplasdoet.nl/wp-content/uploads/2016/03/cropped-IMG_7544-1.jpg);">
+    <div class="banner row-6 green-background" style="background-image: url(http://www.oosterplasdoet.nl/wp-content/uploads/2016/03/cropped-IMG_7544-1.jpg);">
         <img src="//www.oosterplasdoet.nl/wp-content/uploads/2016/11/Schermafbeelding-2016-11-02-om-22.13.56-e1478121477474.png" alt="" class="centered-logo">
     </div>
 <div class="container raised">
     <div class="slogan">
-        <h1 class="vague-green">We halen samen meer uit onze wijk!</h1>
+        <h1 class="green">We halen samen meer uit onze wijk!</h1>
         <p>
             Stichting OosterplasDOET! is er als wijkonderneming in de wijken ‘s-Hertogenbosch Oost en Hintham om mensen
             en
@@ -25,19 +25,19 @@
                     Je leert plannen en je krijgt begeleiding om je brugklas jaar goed aan te pakken. Dit alles vindt plaats bij de Biechten en er is tussentijds ook ruimte om even lekker
                     te ontspannen of juist even te bewegen om daarna met hernieuwd concentratie weer verder te gaan.
                 </p>
-                <button class="more vague-orange-background">Lees meer</button>
+                <button class="more orange-background">Lees meer</button>
             </div>
         </div>
         <div class="serviceBlock col-md-6 orange-background" style="background-image: url(http://i.telegraph.co.uk/multimedia/archive/03219/stock-photos-vince_3219813k.jpg)">
             <div class="blurred contentPane">
-                <h3 class="vague-green">Gunbanen</h3>
+                <h3 class="green">Gunbanen</h3>
                 <p>
                     “Het project 'gunbanen' is een pilot. Verenigingen rondom de Oosterplas willen zich graag inzetten werkloze Bossche jongeren.
                     Het doel is om hen aan een betaalde baan te krijgen. Jongeren zetten zich vrijwillig in bij één van de dertien verenigingen in Den Bosch Oost.
                     Met behoud van hun uitkering, en zonder de sollicitatieplicht.
                     In ruil voor het geleverde werk en getoonde motivatie gaat Oosterplas doet! na een half jaar binnen het netwerk van vijfduizend leden op zoek naar een betaalde baan.”
                 </p>
-                <button class="more vague-orange-background">Lees meer</button>
+                <button class="more orange-background">Lees meer</button>
             </div>
         </div>
     </div>
@@ -71,4 +71,40 @@
         </div>
     </div>
 </div>
+    <div class="banner row-4 orange-background" style="background-image: url(http://www.panoramawinkel.nl/upload/products/1394527120-art-Panoramafoto_Den_Bosch_Oeteldonk_Markt_Oeteldonkse_dinsdag_S_00173-2500.jpg);">
+        <h1 class="white">socialmedia/contact</h1>
+    </div>
+    <div class="container social-contact">
+        <div class="row">
+            <div class="col-md-6 row-5 text-center socialmedia-block">
+                <div>
+                    <a href="https://www.facebook.com/OosterplasDoet">
+                        <i class="fa fa-5x fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/oosterplasdoet">
+                        <i class="fa fa-5x fa-twitter"></i>
+                    </a>
+                    <p>Volg ons op op faceboook en twitter om op de hoogte te blijven</p>
+                </div>
+            </div>
+            <div class="col-md-6 row-5">
+                <p>
+                    Wij zoeken graag naar feedback voor onze site en organiatie. <br>
+                    Heb jij nog feedback of een idee voor ons? Laat dan hier achter. <br>
+                    <br>
+                    Vul evenuteel je naam en email adres in zodat wij je terug kunnen mailen!
+                </p>
+                <form class="feedback-form" action="#">
+                    <label for="name">naam: </label><input placeholder="naam" name="naam" type="text"><br>
+                    <label for="email">email: </label><input placeholder="email" name="email" type="email"><br>
+                    <textarea placeholder="uw bericht" rows="7" cols="50"></textarea><br>
+                    Wij zijn je zeer dankbaar! <input class="orange-background" value="verzend" type="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- font awesoem -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 @endsection
