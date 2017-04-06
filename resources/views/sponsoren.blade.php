@@ -14,22 +14,22 @@
 		}
 	</script>
 
-
-
 	<!-- Banner bovenaan het scherm -->
-	<div class="banner row-6 vague-green-background" style="background-image: url(http://www.oosterplasdoet.nl/wp-content/uploads/2016/03/cropped-IMG_7544-1.jpg);"></div>
+	<div class="banner row-6 vague-green-background" style="background-image: url(http://www.oosterplasdoet.nl/wp-content/uploads/2016/03/cropped-IMG_7544-1.jpg);">
+		 <img src="//www.oosterplasdoet.nl/wp-content/uploads/2016/11/Schermafbeelding-2016-11-02-om-22.13.56-e1478121477474.png" alt="" class="centered-logo">
+	</div>
 
 	<!-- Container voor de rest van de inhoud -->
 	<div class="container" id="test2">
 
 		<!-- Titel voor de pagina met bijbehorende text -->
 		<div class="row">
-			<div class="col-md-8 col-md-offset-2" style="background-color: white; min-height: 200px; margin-top: -120px; text-align: center;"><h1 class="vague-green">Samen werken met elkaar!</h1><p>Oosterplas werkt graag samen met initiatiefnemers, verenigingen, organisaties en bedrijven</p> <p>Wil jij ook deelnemen? stuur dan een bericht naar oosterplas@gmail.com</p></div>
+			<div class="slogan" style="width: calc(100vw - 300px); background-color: white; min-height: 184px; margin-top: -60px; padding-top: 20px; text-align: center;"><h1 class="vague-green"><u>Samen werken met elkaar!</u></h1><p>Oosterplas werkt graag samen met initiatiefnemers, verenigingen, organisaties en bedrijven</p> <p>Wil jij ook deelnemen? stuur dan een bericht naar oosterplas@gmail.com</p></div>
 		</div>
 		
 		<!-- Grid met afbeeldingen van alle bedrijven -->
-		<div class="row" style="margin-top: 100px; background-color: gray;">
-			<div class="col-md-8" style="min-height: 500px;">
+		<div class="row" style="background-color: #A9C80C;">
+			<div class="col-md-8" style="height: 500px; margin-top: 10px;">
 					<div class="row " style="margin-bottom: 10px;">
 
 						<a href="http://debiechten.nl/"><img href="http://www.w3.org" onmouseover='showText("Sociaal Cultureel Centrum de Biechten", "De Biechten faciliteert en denkt mee met allerlei activiteiten en het KEFO in het bijzonder");' src="{{asset('img/sponsoren/logo-de-biechten.png')}}" class="col-md-2" ></a>
@@ -71,7 +71,7 @@
 				</div>
 				
 			<!-- Text van elke organisatie -->
-			<div class="col-md-4 sponsor-info" style=" min-height: 500px;">
+			<div class="col-md-4" style=" background-color: #EC6A1E; height: 500px; margin-top: 5px; margin-left: -5px; margin-bottom: 5px">
 				<h2 class="title" id="1">Naam van instantie</h2>
 				<p class="info" id="2">Hier komt een beschrijving van de sponsor te staan. Hier vind je bijvoobeeld waarom het bedrijf of club een sponsor is en wat er is begedragen</p>
 			</div>
