@@ -42,7 +42,7 @@
                     Je leert plannen en je krijgt begeleiding om je brugklas jaar goed aan te pakken. Dit alles vindt plaats bij de Biechten en er is tussentijds ook ruimte om even lekker
                     te ontspannen of juist even te bewegen om daarna met hernieuwd concentratie weer verder te gaan.
                 </p>
-                <button class="more vague-orange-background">Lees meer</button>
+                <a href="" class="button more vague-orange-background">Lees meer</a>
             </div>
         </div>
     </div>
@@ -60,7 +60,7 @@
                     Je leert plannen en je krijgt begeleiding om je brugklas jaar goed aan te pakken. Dit alles vindt plaats bij de Biechten en er is tussentijds ook ruimte om even lekker
                     te ontspannen of juist even te bewegen om daarna met hernieuwd concentratie weer verder te gaan.
                 </p>
-                <button class="more vague-orange-background">Lees meer</button>
+                <a href="" class="button more vague-orange-background">Lees meer</a>
             </div>
         </div>
         <div class="serviceBlock col-md-4 orange-background" style="background-image: url(http://wvua23.com/wp-content/uploads/2015/04/school-stock.jpg)">
@@ -71,7 +71,7 @@
                     Je leert plannen en je krijgt begeleiding om je brugklas jaar goed aan te pakken. Dit alles vindt plaats bij de Biechten en er is tussentijds ook ruimte om even lekker
                     te ontspannen of juist even te bewegen om daarna met hernieuwd concentratie weer verder te gaan.
                 </p>
-                <button class="more vague-orange-background">Lees meer</button>
+                <a href="" class="button more vague-orange-background">Lees meer</a>
             </div>
         </div>
         <div class="serviceBlock col-md-4 orange-background" style="background-image: url(http://wvua23.com/wp-content/uploads/2015/04/school-stock.jpg)">
@@ -82,7 +82,7 @@
                     Je leert plannen en je krijgt begeleiding om je brugklas jaar goed aan te pakken. Dit alles vindt plaats bij de Biechten en er is tussentijds ook ruimte om even lekker
                     te ontspannen of juist even te bewegen om daarna met hernieuwd concentratie weer verder te gaan.
                 </p>
-                <button class="more vague-orange-background">Lees meer</button>
+                <a href="" class="button more vague-orange-background">Lees meer</a>
             </div>
         </div>
     </div>

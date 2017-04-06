@@ -96,7 +96,7 @@ header {
   padding: 50px;
   background-blend-mode: multiply;
   background-size: cover; }
-  .serviceBlock button {
+  .serviceBlock .button {
     float: right;
     margin-right: 2em;
     border: none;
@@ -107,8 +107,10 @@ header {
     -moz-transition: .2s ease-in-out;
     -ms-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
-    transition: .2s ease-in-out; }
-    .serviceBlock button:hover {
+    transition: .2s ease-in-out;
+      border: 0;
+  }
+    .serviceBlock .button:hover {
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); }
   .serviceBlock .contentPane {
     background: rgba(255, 255, 255, 0.7);

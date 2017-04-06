@@ -34,7 +34,7 @@
                         Je leert plannen en je krijgt begeleiding om je brugklas jaar goed aan te pakken. Dit alles vindt plaats bij de Biechten en er is tussentijds ook ruimte om even lekker
                         te ontspannen of juist even te bewegen om daarna met hernieuwd concentratie weer verder te gaan.
                     </p>
-                    <button class="more orange-background">Lees meer</button>
+                    <a href="" class="button more vague-orange-background">Lees meer</a>
                 </div>
             </div>
             <div class="serviceBlock col-md-6 orange-background" style="background-image: url(http://i.telegraph.co.uk/multimedia/archive/03219/stock-photos-vince_3219813k.jpg)">
@@ -46,7 +46,7 @@
                         Met behoud van hun uitkering, en zonder de sollicitatieplicht.
                         In ruil voor het geleverde werk en getoonde motivatie gaat Oosterplas doet! na een half jaar binnen het netwerk van vijfduizend leden op zoek naar een betaalde baan.”
                     </p>
-                    <button class="more orange-background">Lees meer</button>
+                    <a href="" class="button more vague-orange-background">Lees meer</a>
                 </div>
             </div>
         </div>

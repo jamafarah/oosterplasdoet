@@ -19,7 +19,7 @@
         Startdatum: {{ Carbon::createFromFormat('Y-m-d H:i:s', $event->startDate)->format('d-m-Y') }}<br />
         Starttijd: {{ Carbon::createFromFormat('Y-m-d H:i:s', $event->startDate)->format('H:i') }}<br /><br />
 
-        <a class="btn  btn-lg vague-orange-background" style="border-radius: 0; color: #fff" href="{{ route('signup', $event->id) }}">Inschrijven</a></button>
+        <a class="btn btn-lg vague-orange-background" style="border-radius: 0; color: #fff" href="{{ route('signup', $event->id) }}">Inschrijven</a>
     </div>
 </div>
 @endsection
