@@ -36,7 +36,7 @@ class SignUpController extends Controller {
             $event = Event::findOrFail($id);
 
             $this->validate($request, [
-                'emailaddress' => 'required|max:255',
+                'emailaddress' => 'required|email|max:255',
                 'first_name' => 'required|min:2|max:255',
                 'last_name' => 'required|min:2|max:255',
                 'birthdate' => 'required|date',
@@ -47,10 +47,10 @@ class SignUpController extends Controller {
 
 
             $signup = new Signup();
-            $signup->emailaddress = $request->get("emailaddress");
-            $signup->first_name = $request->get("first_name");
-            $signup->last_name = $request->get("last_name");
-            $signup->birthdate = '2017-03-07';
+            $signup->emailaddress = $request->get('emailaddress');
+            $signup->first_name = $request->get('first_name');
+            $signup->last_name = $request->get('last_name');
+            $signup->birthdate = $request->get('birthdate');
 
             $event->signups()->save($signup);
 
@@ -61,8 +61,6 @@ class SignUpController extends Controller {
                     $signupAppendix->fill($appendix);
                     $signupAppendix->signup_id = $signup->id;
 
-                    //$signupAppendix->save();
-                    //$signupAppendices[] = $signupAppendix;
                     $signup->appendices()->save($signupAppendix);
                 }
             }
@@ -80,8 +78,8 @@ class SignUpController extends Controller {
     }
 
 
-    private function sendSignupEmail($event, $signup, $signupAppendices) {
-        // Generate email
+    private function sendSignupEmail($event, Signup $signup, $signupAppendices) {
+        // Send mail to organisation
         Mail::send('mails.signup', [
             'event' => $event,
             'signup' => $signup,
@@ -89,6 +87,16 @@ class SignUpController extends Controller {
         ], function ($m) use ($signup) {
             $m->from(config('app.emails.signup'), 'Oosterplas inschrijving');
             $m->to(config('app.emails.signup'), "Oosterplas")->subject('Inschrijving evenement');
+        });
+
+        // Send mail to signup
+        Mail::send('mails.signupConfirmation', [
+            'event' => $event,
+            'signup' => $signup,
+            'signupAppendices' => $signupAppendices,
+        ], function ($m) use ($signup, $event) {
+            $m->from(config('app.emails.signup'), 'Inschrijving ' . $event->name);
+            $m->to($signup->emailaddress, $signup->getFullName())->subject('Inschrijving evenement');
         });
     }
 }

@@ -1,11 +1,6 @@
-<p>Beste Oosterplas,</p>
-<p>Er is een inschrijving binnen gekomen voor het evenement: {{ $event->name }}.</p>
-<p>Inschrijvingsdetails:</p>
-Naam: {{ $signup->getFullName() }}<br />
-Emailadres: {{ $signup->emailaddress }}<br />
-Geboortedatum: {{ $signup->birthdate }}<br />
-
-
+<p>Beste {{ $signup->getFullName() }},</p>
+<p>U heeft zich zojuist ingeschreven voor het evenement: {{ $event->name }}</p>
+<p></p>
 @if (count($signup->appendices) > 0)
     <p>Aanhangsels:</p>
             @foreach ($signup->appendices as $appendix)
@@ -15,3 +10,7 @@ Geboortedatum: {{ $signup->birthdate }}<br />
                 </p>
             @endforeach
 @endif
+<p>
+    Met vriendelijke groet,
+    OosterplasDOET
+</p>
