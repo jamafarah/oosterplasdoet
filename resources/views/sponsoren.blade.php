@@ -47,7 +47,7 @@
 						<a href="http://www.hambaken-gym.nl/"><img onmouseover='showText("Vereniging Hambaken Gym ", "Ze werken mee aan de huiswerk begeleiding en verzorgen kickboxen voor vrouwen in Hintham");' src="{{asset('img/sponsoren/logo-hambaken-gym.jpg')}}" class="col-md-2" ></a>
 						<a href="http://www.hcdenbosch.nl"><img onmouseover='showText("Hockeyclub s-Hertogenbosch", "De hockeyclub is onder andere betrokken in de co-creatie rondom het KEFO. Zij stellen ruimte ter beschikking voor de organisatie. Daarnaast zijn zij partner in sportactiviteiten rondom de Oosterplas");' src="{{asset('img/sponsoren/logo-hockeyclub.png')}}" class="col-md-2" ></a>
 						<a href="https://www.kw1c.nl/"><img onmouseover='showText("KW1C (Koning Willem 1 College)", "Zij zorgen voor stagiaires en helpen mee bij het opzetten van het Leerwerkbedrijf");' src="{{asset('img/sponsoren/logo-koning-willem1.png')}}" class="col-md-2" ></a>
-						<a href="http://www.modelbotenclub-titanic.nl"><img onmouseover='showText("Titanic, modelboten club", "Titanic is onder andere betrokken in de co-creatie rondom het KEFO en stelt hun clubhuis ter beschikking als start- en eindpunt voor de activiteit: wandelen in de natuur");' src="{{asset(logo-modelbotenclub.jpg)}}" class="col-md-2" ></a>
+						<a href="http://www.modelbotenclub-titanic.nl"><img onmouseover='showText("Titanic, modelboten club", "Titanic is onder andere betrokken in de co-creatie rondom het KEFO en stelt hun clubhuis ter beschikking als start- en eindpunt voor de activiteit: wandelen in de natuur");' src="{{asset('img/sponsoren/logo-modelbotenclub.jpg')}}" class="col-md-2" ></a>
 					
 					</div>
 					<div class="row" style="margin-bottom: 10px;">
