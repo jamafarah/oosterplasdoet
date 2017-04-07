@@ -8,7 +8,7 @@
                 <p>
                     {!! $event->content !!}
                 </p>
-                <a href="" class="button more orange-background">Lees meer</a>
+                <a class="button more vague-orange-background" href="{{ route('eventShow', $event->id) }}">Lees meer</a>
             </div>
         </div>
     </div>
