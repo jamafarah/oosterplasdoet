@@ -11,6 +11,6 @@
             @endforeach
 @endif
 <p>
-    Met vriendelijke groet,
+    Met vriendelijke groet,<br />
     OosterplasDOET
 </p>
