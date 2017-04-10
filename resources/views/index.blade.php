@@ -14,6 +14,15 @@
         </div>
     </div>
     @endif
+        @if (Session::has('error'))
+        <div class="container">
+            <div class="row">
+                <div class="alert alert-danger">
+                    {{ Session::get('error') }}
+                </div>
+            </div>
+        </div>
+    @endif
     <div class="container raised">
         <div class="slogan">
             <h1 class="green">We halen samen meer uit onze wijk!</h1>
@@ -120,7 +129,7 @@
                             </ul>
                         </div>
                     @endif
-                    {!! Form::open(['route' => 'index', 'class' => 'feedback-form']) !!}
+                    {!! Form::open(['route' => 'postIdea', 'class' => 'feedback-form']) !!}
                     <div class="row">
                         <div class="col-lg-4">
                             {!! Form::label('first_name', 'Voornaam') !!}

@@ -30,6 +30,9 @@ Route::get('eventOverview', function(){
 Route::get('/', 'IndexController@getIndex')->name('index');
 Route::post('/', 'IndexController@postIndex');
 
+Route::post('contact/idea', 'ContactController@postIdea')->name('postIdea');
+
+
 Route::get('events', 'EventController@index')->name('events');
 Route::get('event/{id}', 'EventController@show')->name('eventShow');
 
