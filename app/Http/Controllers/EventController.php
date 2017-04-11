@@ -18,10 +18,14 @@ use Illuminate\Validation\ValidationException;
 
 class EventController extends Controller {
 
+    /**
+     * Show events
+     *
+     * @return $this
+     */
     public function index() {
         try {
             $events = Event::all();
-
         } catch (ModelNotFoundException $e) {
             abort(404);
         }
@@ -29,19 +33,20 @@ class EventController extends Controller {
         return view('event.index')->with(compact('events'));
     }
 
-    public function show(Request $request, $id) {
+    /**
+     * Show event
+     *
+     * @param Request $request
+     * @param $id
+     * @return $this
+     */
+    public function show($id) {
         try {
             $event = Event::findOrFail($id);
-
-
         } catch (ModelNotFoundException $e) {
             abort(404);
         }
 
         return view('event.show')->with(compact('event'));
-    }
-
-    public function signup(Request $request, $id) {
-
     }
 }

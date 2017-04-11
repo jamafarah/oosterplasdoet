@@ -14,7 +14,7 @@ class SignupAppendix extends Model {
 
 	protected $dates = ['deleted_at'];
 
-    protected $fillable = array('first_name', 'last_name', 'birthdate');
+    protected $fillable = ['first_name', 'last_name', 'birthdate'];
 
 	public function signups()
 	{
