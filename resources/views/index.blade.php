@@ -74,6 +74,7 @@
 <div class="container">
     <div class="row highlightRow">
         <div class="col-xs-12 col-md-4 row-6 serviceBlock">
+
             <div class="row image thumbnail" style="background-image: url(http://www.oosterplasdoet.nl/wp-content/uploads/2016/03/FullSizeRender.jpg)"></div>
             <h3 class="orange title">B-Battle</h3>
             <h3 class="orange date">6/9/2017</h3>
@@ -82,12 +83,14 @@
                 Winnaar B-Battle 2016: Zeilvereniging Oosterplas. Gefeliciteerd!</p>
         </div>
         <div class="col-xs-12 col-md-4 row-6 serviceBlock">
+
             <div class="row image thumbnail" style="background-image: url(http://www.oosterplasdoet.nl/wp-content/uploads/2016/03/IMG_6991-e1465718742680.jpg)"></div>
             <h3 class="orange title">BAGGERLOOP 2016</h3>
             <h3 class="orange date">20/3/2016</h3>
             <p>Baggerloop is een jaarlijks evenement dat georganiseerd wordt in samenwerking met ‘S-PORT. Basisschool scholieren van diverse scholen lopen op vrijdagochtend een rondje rond de Oosterplas en moeten daarbij allerlei obstakels trotseren.</p>
         </div>
         <div class="col-xs-12 col-md-4 row-6 serviceBlock">
+
             <div class="row image thumbnail" style="background-image: url(http://www.oosterplasdoet.nl/wp-content/uploads/2016/03/IMG_6892-e1465718042625.jpg)"></div>
             <h3 class="orange title">komend evenement</h3>
             <h3 class="orange date">9/7/17</h3>
