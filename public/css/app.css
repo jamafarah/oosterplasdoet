@@ -198,6 +198,15 @@ i.fa.fa-5x:hover {
   border: none;
   color: white; }
 
+.sponsor-overview img {
+  padding: 20px;
+  filter: grayscale(1);
+}
+
+.sponsor-container {
+  display: flex;
+}
+
 .side-form {
   border-left: 2px solid #ef6c33; }
 
