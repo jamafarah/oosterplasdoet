@@ -58,3 +58,7 @@ Route::get('about', function () {
 Route::get('sponsoren', function () {
     return view('sponsoren');
 });
+
+Route::get('contact', function () {
+	return view('contact');
+});
