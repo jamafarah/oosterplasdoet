@@ -30,7 +30,7 @@ class ContactController extends Controller
         // Check if validators fails
         if ($validator->fails()) {
             Session::flash('error', 'Een of meerdere velden kloppen niet');
-            return redirect()->route('index')->withInput()->withErrors($validator);
+            return redirect()->back()->withInput()->withErrors($validator);
         }
 
 
@@ -46,7 +46,7 @@ class ContactController extends Controller
         // Flash
         Session::flash('success', 'Uw bericht is verzonden');
 
-        return redirect()->route('index');
+        return redirect()->back();
     }
 
     /**

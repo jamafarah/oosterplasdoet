@@ -26,6 +26,24 @@
 		 <img src="//www.oosterplasdoet.nl/wp-content/uploads/2016/11/Schermafbeelding-2016-11-02-om-22.13.56-e1478121477474.png" alt="" class="centered-logo">
 	</div>
 
+    @if (Session::has('success'))
+    <div class="container">
+        <div class="row">
+            <div class="alert alert-success">
+                {{ Session::get('success') }}
+            </div>
+        </div>
+    </div>
+    @endif
+        @if (Session::has('error'))
+        <div class="container">
+            <div class="row">
+                <div class="alert alert-danger">
+                    {{ Session::get('error') }}
+                </div>
+            </div>
+        </div>
+    @endif
 	<!-- Container voor de rest van de inhoud -->
 	<div class="container" id="test2">
 
