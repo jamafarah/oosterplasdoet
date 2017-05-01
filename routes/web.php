@@ -41,10 +41,7 @@ Route::get('signup/{id}', 'SignUpController@getSignUp')->name("signup");
 Route::post('signup/{id}', 'SignUpController@postSignUp');
 
 
-Route::get('activiteiten', function () {
-    return view('underconstruction');
-});
-Route::get('bedrijven', function () {
+Route::get('underconstruction', function () {
     return view('underconstruction');
 });
 Route::get('bewoners', function () {

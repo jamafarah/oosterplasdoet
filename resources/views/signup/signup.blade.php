@@ -44,7 +44,7 @@
             <br />
 
             {!! Form::label('birthdate', 'Geboortedatum') !!}
-            {!! Form::date('birthdate', '', ['required'=>'required', 'class'=>'form-control']) !!}
+            {!! Form::date('birthdate', '', ['required'=>'required', 'class'=>'form-control datepicker']) !!}
             <br />
 
 
@@ -62,7 +62,7 @@
                     <br />
 
                     {!! Form::label('appendices[0][birthdate]', 'Geboortedatum') !!}
-                    {!! Form::date('appendices[0][birthdate]', '', ['required'=>'required', 'class'=>'form-control']) !!}
+                    {!! Form::date('appendices[0][birthdate]', '', ['required'=>'required', 'class'=>'form-control datepicker']) !!}
                     <br />
                     <span class="btn vague-orange-background remove" style="border-radius: 0; color: #fff">Verwijder bovenstaand aanhangsel</span>
                 </div>
@@ -105,17 +105,38 @@ $(document).ready(function() {
             "<br />"+
 
             "<label for=\"appendices[" + newId + "][birthdate]\">Geboortedatum</label>"+
-            "<input required=\"required\" class=\"form-control\" name=\"appendices[" + newId + "][birthdate]\" type=\"date\" id=\"appendices[0][birthdate]\">"+
+            "<input required=\"required\" class=\"form-control datepicker\" name=\"appendices[" + newId + "][birthdate]\" type=\"date\" id=\"appendices[0][birthdate]\">"+
             "<br />"+
             "<span class=\"btn vague-orange-background remove\" style=\"border-radius: 0; color: #fff\">Verwijder bovenstaand aanhangsel</span>"+
         "</div>";
 
         $(".appendices").append(element);
+
+
+
+    $(".datepicker").datepicker({
+        changeMonth: true,
+        changeYear: true,
+        yearRange: '1930:{{ date('Y') }}',
+        dateFormat: 'yy-mm-dd'
+    })
     });
 
     $(".appendices").on("click", ".remove", function (){
         $(this).parent().remove();
     });
+
+    $("html").on('click', '.datepicker', function(e) {
+        e.preventDefault();
+    });
+
+    $(".datepicker").datepicker({
+        changeMonth: true,
+        changeYear: true,
+        yearRange: '1930:{{ date('Y') }}',
+        dateFormat: 'yy-mm-dd'
+    })
+
 });
 </script>
 @endsection
