@@ -69,7 +69,7 @@
 </div>
     </div>
     <div class="banner row-4 orange-background" style="background-image: url(http://www.panoramawinkel.nl/upload/products/1394527120-art-Panoramafoto_Den_Bosch_Oeteldonk_Markt_Oeteldonkse_dinsdag_S_00173-2500.jpg);">
-        <h1 class="white">higlights/activiteiten</h1>
+        <h1 class="white">Higlights/Activiteiten</h1>
     </div>
 <div class="container">
     <div class="row highlightRow">
@@ -101,7 +101,28 @@
         </div>
     </div>
     <div class="banner row-4 orange-background" style="background-image: url(http://www.panoramawinkel.nl/upload/products/1394527120-art-Panoramafoto_Den_Bosch_Oeteldonk_Markt_Oeteldonkse_dinsdag_S_00173-2500.jpg);">
-        <h1 class="white">socialmedia/contact</h1>
+        <h1 class="white">Nieuws</h1>
+    </div>
+    <div class="container">
+        <div class="row highlightRow">
+
+            @if (count($news) > 0)
+                @foreach ($news AS $news)
+                    <div class="col-xs-12 col-md-4 row-6 serviceBlock">
+
+                        <div class="row image thumbnail" style="background-image: url(http://www.oosterplasdoet.nl/wp-content/uploads/2016/03/FullSizeRender.jpg)"></div>
+                        <h3 class="orange title">{{ $news->title }}</h3>
+                        <h3 class="orange date">{{ Carbon::createFromFormat('Y-m-d H:i:s', $news->created_at)->format('H:i d-m-Y') }}</h3>
+                        <p>{!! $news->content !!}</p>
+                    </div>
+                @endforeach
+            @else
+                <p>Geen nieuws gevonden</p>
+            @endif
+        </div>
+    </div>
+    <div class="banner row-4 orange-background" style="background-image: url(http://www.panoramawinkel.nl/upload/products/1394527120-art-Panoramafoto_Den_Bosch_Oeteldonk_Markt_Oeteldonkse_dinsdag_S_00173-2500.jpg);">
+        <h1 class="white">Socialmedia/Contact</h1>
     </div>
     <div class="container social-contact">
         <div class="row">
