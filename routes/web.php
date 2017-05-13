@@ -41,6 +41,10 @@ Route::get('signup/{id}', 'SignUpController@getSignUp')->name("signup");
 Route::post('signup/{id}', 'SignUpController@postSignUp');
 
 
+Route::get('nieuws', 'NewsController@index')->name('news');
+Route::get('nieuws/{id}', 'NewsController@show')->name('newsShow');
+
+
 Route::get('underconstruction', function () {
     return view('underconstruction');
 });
@@ -55,3 +59,4 @@ Route::get('about', function () {
 Route::get('sponsoren', function () {
     return view('sponsoren');
 });
+
