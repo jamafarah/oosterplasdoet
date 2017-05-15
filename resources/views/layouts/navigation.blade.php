@@ -4,7 +4,12 @@
         <ul>
             <li><a href="{{ url('/') }}">home</a></li>
             <li><a href="{{ url('/sponsoren') }}">onze sponsoren</a></li>
-            <li><a href="{{ url('/underconstruction') }}">activiteiten kalender</a></li>
+            <li><a href="{{ url('') }}">services</a>
+                <ul>
+                    <a href="{{ url('/gunbanen') }}">gunbanen</a>
+                    <a href="{{ url('/huiswerkbegeleiding') }}">huiswerkbegeleiding</a>
+                </ul>
+            </li>
             <li><a href="{{ url('/events') }}">activiteiten</a></li>
             <li><a href="{{ url('/bewoners') }}">buurtbewoners</a></li>
             <li><a href="{{ url('/about') }}">over ons</a></li>
