@@ -52,6 +52,6 @@ Route::get('about', function () {
     return view('underconstruction');
 });
 
-Route::get('sponsoren', function () {
-    return view('sponsoren');
+Route::get('partners', function () {
+    return view('partners');
 });

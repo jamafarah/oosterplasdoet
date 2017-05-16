@@ -3,7 +3,7 @@
             <img src="//www.oosterplasdoet.nl/wp-content/uploads/2016/11/Schermafbeelding-2016-11-02-om-22.13.56-e1478121477474.png" alt="" class="logo">
             <ul class="nav navbar-nav">
                 <li><a href="{{ url('/') }}">home</a></li>
-                <li><a href="{{ url('/sponsoren') }}">onze sponsoren</a></li>
+                <li><a href="{{ url('/partners') }}">partners</a></li>
                 <li class="dropdown">
 
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
