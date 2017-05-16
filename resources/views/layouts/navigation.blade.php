@@ -1,18 +1,21 @@
 <header>
-    <nav class="container navigation">
-        <img src="//www.oosterplasdoet.nl/wp-content/uploads/2016/11/Schermafbeelding-2016-11-02-om-22.13.56-e1478121477474.png" alt="" class="logo">
-        <ul>
-            <li><a href="{{ url('/') }}">home</a></li>
-            <li><a href="{{ url('/sponsoren') }}">onze sponsoren</a></li>
-            <li><a href="{{ url('') }}">services</a>
-                <ul>
-                    <a href="{{ url('/gunbanen') }}">gunbanen</a>
-                    <a href="{{ url('/huiswerkbegeleiding') }}">huiswerkbegeleiding</a>
-                </ul>
-            </li>
-            <li><a href="{{ url('/events') }}">activiteiten</a></li>
-            <li><a href="{{ url('/bewoners') }}">buurtbewoners</a></li>
-            <li><a href="{{ url('/about') }}">over ons</a></li>
-        </ul>
+    <nav class="navbar navbar-default navigation">
+            <img src="//www.oosterplasdoet.nl/wp-content/uploads/2016/11/Schermafbeelding-2016-11-02-om-22.13.56-e1478121477474.png" alt="" class="logo">
+            <ul class="nav navbar-nav">
+                <li><a href="{{ url('/') }}">home</a></li>
+                <li><a href="{{ url('/sponsoren') }}">onze sponsoren</a></li>
+                <li>
+
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+
+                    <ul class="dropdown-menu">
+                        <li><a href="{{ url('/gunbanen') }}">gunbanen</a></li>
+                        <li><a href="{{ url('/huiswerkbegeleiding') }}">huiswerkbegeleiding</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{ url('/events') }}">activiteiten</a></li>
+                <li><a href="{{ url('/bewoners') }}">buurtbewoners</a></li>
+                <li><a href="{{ url('/about') }}">over ons</a></li>
+            </ul>
     </nav>
 </header>
