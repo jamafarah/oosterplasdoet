@@ -35,6 +35,10 @@ header {
     header a:hover {
       text-decoration: underline; }
 
+ul.nav li.dropdown:hover ul.dropdown-menu{
+  display: block;
+}
+
 .banner {
   display: flex;
   align-items: center;
