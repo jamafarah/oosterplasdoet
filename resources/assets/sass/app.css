@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@font-face {
+  font-family: "Bebas Neue"; }
+body {
+  margin: 0; }
+  body h1, body h2, body h3, body p, body button {
+    font-weight: 100;
+    font-family: "Bebas Neue"; }
+  body p {
+    font-size: 18px; }
+
+header {
+  padding: 10px;
+  height: 50px;
+  width: 100vw;
+  z-index: 9999;
+  background-color: white;
+  position: fixed;
+  -webkit-box-shadow: 2px 5px 44px -14px rgba(128, 128, 128, 0.75);
+  -moz-box-shadow: 2px 5px 44px -14px rgba(128, 128, 128, 0.75);
+  box-shadow: 2px 5px 44px -14px rgba(128, 128, 128, 0.75); }
+  header img {
+    float: left;
+    margin-left: 150px;
+    margin-right: 2em;
+    margin-top: -10px;
+    max-height: 50px; }
+  header a {
+    color: black;
+    text-decoration: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin-right: 20px; }
+    header a:hover {
+      text-decoration: underline; }
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+  clear: both; }
+
+.container {
+  width: calc(100vw - 300px);
+  margin-left: 150px;
+  padding-bottom: 50px;
+  background-color: white; }
+
+.raised {
+  margin-top: -60px;
+  padding-top: 20px; }
+
+.slogan {
+  text-align: center;
+  padding-bottom: 20px; }
+  .slogan h1 {
+    text-decoration: underline; }
+  .slogan p {
+    margin: 0 100px; }
+
+.green {
+  color: #acc90f; }
+
+.vague-green {
+  color: #c8b415; }
+
+.orange {
+  color: #ef6c33; }
+
+.vague-orange {
+  color: #db942e; }
+
+.white {
+  color: white; }
+
+.green-background {
+  background-color: #acc90f; }
+
+.vague-green-background {
+  background-color: #c8b415; }
+
+.orange-background {
+  background-color: #ef6c33; }
+
+.vague-orange-background {
+  background-color: #db942e; }
+
+.services {
+  height: 500px; }
+
+.serviceBlock {
+  height: inherit;
+  box-sizing: border-box;
+  padding: 50px;
+  background-blend-mode: multiply;
+  background-size: cover; }
+  .serviceBlock button {
+    float: right;
+    margin-right: 2em;
+    border: none;
+    color: white;
+    font-size: 1em;
+    padding: 4px 8px;
+    -webkit-transition: .2s ease-in-out;
+    -moz-transition: .2s ease-in-out;
+    -ms-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    transition: .2s ease-in-out; }
+    .serviceBlock button:hover {
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); }
+  .serviceBlock .contentPane {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 3px;
+    height: 100%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    padding: 10px; }
+
+.highlightRow {
+  margin-top: 50px; }
+
+.highlightBlock {
+  box-sizing: border-box;
+  border: 1px solid;
+  border-top: none;
+  border-right: none; }
+  .highlightBlock:last-of-type {
+    border-right: 1px solid; }
+  .highlightBlock .thumbnail {
+    border-radius: 0;
+    border: none;
+    height: 40%;
+    background-size: cover;
+    background-position: top; }
+
+.event-form input {
+  width: 100%;
+  margin: 5px 0;
+  border: none;
+  border-left: 1px solid #ef6c33;
+  border-bottom: 1px solid #ef6c33; }
+.event-form input[type="submit"] {
+  border: none;
+  color: white; }
+
+.side-form {
+  border-left: 2px solid #ef6c33; }
+
+.row-1 {
+  height: 8.33vh; }
+
+.row-2 {
+  height: 16.67vh; }
+
+.row-3 {
+  height: 25vh; }
+
+.row-4 {
+  height: 33.33vh; }
+
+.row-5 {
+  height: 41.67vh; }
+
+.row-6 {
+  height: 50vh; }
+
+.row-7 {
+  height: 58.33vh; }
+
+.row-8 {
+  height: 66.67vh; }
+
+.row-9 {
+  height: 75vh; }
+
+.row-10 {
+  height: 83.33vh; }
+
+.row-11 {
+  height: 91.67vh; }
+
+.row-12 {
+  height: 100vh; }
+
+/*# sourceMappingURL=app.css.map */
