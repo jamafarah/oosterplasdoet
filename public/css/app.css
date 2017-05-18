@@ -4,7 +4,7 @@
   src: url("../font/bebas/bebasneue-webfont.woff"); }
 body {
   margin: 0; }
-  body h1, body h2, body h3, body button {
+  body h1, body h2, body h3, body button, a.more {
     font-weight: 100;
     font-family: "Bebas Neue"; }
   body p{
@@ -105,7 +105,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
   padding: 50px;
   background-blend-mode: multiply;
   background-size: cover; }
-  .serviceBlock button {
+  .serviceBlock button, a.more {
     border: none;
     color: white;
     font-size: 1em;
@@ -115,7 +115,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
     -ms-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
     transition: .2s ease-in-out; }
-    .serviceBlock button:hover {
+    .serviceBlock button:hover, a.more:hover {
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); }
 .serviceBlock .contentPane {
   background: rgba(255, 255, 255, 0.7);
