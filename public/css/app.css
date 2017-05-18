@@ -14,7 +14,6 @@ body {
   }
 
 header {
-  padding: 10px;
   height: 50px;
   width: 100vw;
   z-index: 9999;
@@ -25,8 +24,8 @@ header {
   box-shadow: 2px 5px 44px -14px rgba(128, 128, 128, 0.75); }
   header img {
     float: left;
+    margin-left: 150px;
     margin-right: 2em;
-    margin-top: -10px;
     max-height: 50px; }
   header a {
     color: black;
@@ -36,6 +35,9 @@ header {
     header a:hover {
       text-decoration: underline; }
 
+ul.nav li.dropdown:hover ul.dropdown-menu{
+  display: block;
+}
 
 .banner {
   display: flex;
@@ -50,16 +52,6 @@ header {
   margin-left: 150px;
   padding-bottom: 50px;
   background-color: white; }
-
-.navigation{
-  padding-bottom: 0;
-}
-
-.navigation li {
-  list-style-type: none;
-  float: left;
-}
-
 
 .raised {
   margin-top: -60px;
@@ -110,11 +102,10 @@ header {
 .serviceBlock {
   height: inherit;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 50px;
   background-blend-mode: multiply;
   background-size: cover; }
-
-  .serviceBlock button, .serviceBlock a {
+  .serviceBlock button {
     border: none;
     color: white;
     font-size: 1em;
@@ -123,12 +114,8 @@ header {
     -moz-transition: .2s ease-in-out;
     -ms-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
-      border: 0;
-    float: right;
-    margin-right: 2em;
-  }
-    .serviceBlock .button:hover {
+    transition: .2s ease-in-out; }
+    .serviceBlock button:hover {
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); }
 .serviceBlock .contentPane {
   background: rgba(255, 255, 255, 0.7);
@@ -144,11 +131,6 @@ header {
 .highlightRow {
   margin-top: 50px; }
 
-.highlightRow .serviceBlock{
-  padding: initial;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 .highlightBlock {
   box-sizing: border-box;
   border: 1px solid;
@@ -197,15 +179,6 @@ i.fa.fa-5x:hover {
 .event-form input[type="submit"], .feedback-form input[type="submit"] {
   border: none;
   color: white; }
-
-.sponsor-overview img {
-  padding: 20px;
-  filter: grayscale(1);
-}
-
-.sponsor-container {
-  display: flex;
-}
 
 .side-form {
   border-left: 2px solid #ef6c33; }
