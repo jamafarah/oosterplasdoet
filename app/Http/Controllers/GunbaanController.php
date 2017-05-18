@@ -35,12 +35,7 @@ class GunbaanController extends Controller
 
         \Mail::send('mails.gunbaan',
             [
-                'Naam' => $gunbaanSignup->Naam,
-                'Email' => $gunbaanSignup->Email,
-                'Geboortedatum'=> $gunbaanSignup->Geboortedatum,
-                'TelefoonNummer'=> $gunbaanSignup->TelefoonNummer,
-                'Adres'=> $gunbaanSignup->Adres,
-                'Studie'=> $gunbaanSignup->Studie
+                'gunbaanSignup' => $gunbaanSignup
             ], function($message) use ($gunbaanSignup)
             {
                 $message->from('OosterplasGOET@OosterplasGOET.nl');

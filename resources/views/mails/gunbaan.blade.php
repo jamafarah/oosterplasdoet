@@ -2,25 +2,25 @@ Je inschrijving voor Gunbanen bij OosterplasDOET! is compleet
 
 Gegevens waarmee je je hebt ingeschreven:
 <p>
-    Naam: {{ $Naam}}
+    Naam: {{ $gunbaanSignup->Naam}}
 </p>
 
 <p>
-    Email: {{ $Email }}
+    Email: {{ $gunbaanSignup->Email }}
 </p>
 
 <p>
-    Geboortedatum: {{ $Geboortedatum }}
+    Geboortedatum: {{ $gunbaanSignup->Geboortedatum }}
 </p>
 
 <p>
-    TelefoonNummer: {{ $TelefoonNummer }}
+    TelefoonNummer: {{ $gunbaanSignup->TelefoonNummer }}
 </p>
 
 <p>
-    Adres: {{ $Adres }}
+    Adres: {{ $gunbaanSignup->Adres }}
 </p>
 
 <p>
-    Studie: {{ $Studie }}
+    Studie: {{ $gunbaanSignup->Studie }}
 </p>
