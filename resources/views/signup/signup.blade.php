@@ -44,7 +44,7 @@
             <br />
 
             {!! Form::label('birthdate', 'Geboortedatum') !!}
-            {!! Form::date('birthdate', '', ['required'=>'required', 'class'=>'form-control']) !!}
+            {!! Form::date('birthdate', '', ['required'=>'required', 'class'=>'form-control datepicker']) !!}
             <br />
 
 
@@ -52,20 +52,13 @@
                 <h3>Aanhangsels</h3>
                 <p>Geef hier aan welke aanhangels u wil inschrijven</p>
                         <span class="btn vague-orange-background add" style="border-radius: 0; color: #fff">Voeg aanhangsel toe</span><br/><br/>
-                <div class="appendix" data-id="0">
-                    {!! Form::label('appendices[0][first_name]', 'Voornaam') !!}
-                    {!! Form::text('appendices[0][first_name]', '', ['required'=>'required', 'class'=>'form-control']) !!}
-                    <br />
-
-                    {!! Form::label('appendices[0][last_name]', 'Achternaam') !!}
-                    {!! Form::text('appendices[0][last_name]', '', ['required'=>'required', 'class'=>'form-control']) !!}
-                    <br />
-
-                    {!! Form::label('appendices[0][birthdate]', 'Geboortedatum') !!}
-                    {!! Form::date('appendices[0][birthdate]', '', ['required'=>'required', 'class'=>'form-control']) !!}
-                    <br />
-                    <span class="btn vague-orange-background remove" style="border-radius: 0; color: #fff">Verwijder bovenstaand aanhangsel</span>
-                </div>
+                        @if(count(Request::get('appendices')) == 0)
+                            @include('signup.appendix', ['id' => 0])
+                        @else
+                            @foreach(Request::get('appendices') AS $id => $appendix)
+                                @include('signup.appendix', ['id' => $id])
+                            @endforeach
+                        @endif
             </div>
 
 <br/> <br/> <br/>
@@ -105,17 +98,38 @@ $(document).ready(function() {
             "<br />"+
 
             "<label for=\"appendices[" + newId + "][birthdate]\">Geboortedatum</label>"+
-            "<input required=\"required\" class=\"form-control\" name=\"appendices[" + newId + "][birthdate]\" type=\"date\" id=\"appendices[0][birthdate]\">"+
+            "<input required=\"required\" class=\"form-control datepicker\" name=\"appendices[" + newId + "][birthdate]\" type=\"date\" id=\"appendices[0][birthdate]\">"+
             "<br />"+
             "<span class=\"btn vague-orange-background remove\" style=\"border-radius: 0; color: #fff\">Verwijder bovenstaand aanhangsel</span>"+
         "</div>";
 
         $(".appendices").append(element);
+
+
+
+    $(".datepicker").datepicker({
+        changeMonth: true,
+        changeYear: true,
+        yearRange: '1930:{{ date('Y') }}',
+        dateFormat: 'yy-mm-dd'
+    })
     });
 
     $(".appendices").on("click", ".remove", function (){
         $(this).parent().remove();
     });
+
+    $("html").on('click', '.datepicker', function(e) {
+        e.preventDefault();
+    });
+
+    $(".datepicker").datepicker({
+        changeMonth: true,
+        changeYear: true,
+        yearRange: '1930:{{ date('Y') }}',
+        dateFormat: 'yy-mm-dd'
+    })
+
 });
 </script>
 @endsection

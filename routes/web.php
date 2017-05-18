@@ -55,11 +55,10 @@ Route::get('gunbanen/signup', function () {
     return view('gunbanenSignUp');
 });
 
+Route::get('nieuws', 'NewsController@index')->name('news');
+Route::get('nieuws/{id}', 'NewsController@show')->name('newsShow');
 
-Route::get('activiteiten', function () {
-    return view('underconstruction');
-});
-Route::get('bedrijven', function () {
+Route::get('underconstruction', function () {
     return view('underconstruction');
 });
 Route::get('bewoners', function () {
@@ -70,6 +69,6 @@ Route::get('about', function () {
     return view('underconstruction');
 });
 
-Route::get('sponsoren', function () {
-    return view('sponsoren');
+Route::get('partners', function () {
+    return view('partners');
 });
