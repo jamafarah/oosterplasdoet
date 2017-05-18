@@ -18,7 +18,7 @@ class IndexController extends Controller
      */
     public function getIndex() {
         try {
-            $news = News::orderByDesc('created_at')->limit(3)->get();
+            $news = News::orderBy('created_at')->limit(3)->get();
         } catch (ModelNotFoundException $e) {
             abort(404);
         }

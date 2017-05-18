@@ -105,15 +105,15 @@
     </div>
     <div class="container">
         <div class="row highlightRow">
-
             @if (count($news) > 0)
                 @foreach ($news AS $news)
-                    <div class="col-xs-12 col-md-4 row-6 serviceBlock">
+                    <div class="col-xs-12 col-md-4 row-6 serviceBlock" style="position: relative; height: 100%">
 
-                        <div class="row image thumbnail" style="background-image: url(http://www.oosterplasdoet.nl/wp-content/uploads/2016/03/FullSizeRender.jpg)"></div>
+                        <div class="row image thumbnail" style="background-image: url({{ asset('/img/nieuws/' . $news->img) }})"></div>
                         <h3 class="orange title">{{ $news->title }}</h3>
                         <h3 class="orange date">{{ Carbon::createFromFormat('Y-m-d H:i:s', $news->created_at)->format('H:i d-m-Y') }}</h3>
-                        <p>{!! $news->content !!}</p>
+                        <p>{!! $news->intro !!}</p>
+                        <a class="button more orange-background" href="{{ route('newsShow', $news->id) }}">Lees meer</a>
                     </div>
                 @endforeach
             @else

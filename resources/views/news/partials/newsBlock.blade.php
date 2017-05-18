@@ -3,7 +3,7 @@
         <div class="lib-panel">
             <div class="row blurred contentPane">
                 <div class="col-md-4 no-padding">
-                    <img class="lib-img-show" src="http://wvua23.com/wp-content/uploads/2015/04/school-stock.jpg">
+                    <img class="lib-img-show" src="{{ asset('/img/nieuws/' . $news->img) }}">
                 </div>
                 <div class="col-md-8">
                     <div class="lib-row lib-header">
@@ -12,11 +12,11 @@
                     </div>
                     <div class="lib-row lib-desc">
                         <p>
-                            {!! $news->content !!}
+                            {!! $news->intro !!}
                         </p>
                         Geplaatst op: {{ Carbon::createFromFormat('Y-m-d H:i:s', $news->created_at)->format('H:i d-m-Y') }}<br />
                         Geupdated op: {{ Carbon::createFromFormat('Y-m-d H:i:s', $news->updated_at)->format('H:i d-m-Y') }}<br /><br />
-                        <a class="button more vague-orange-background" href="{{ route('newsShow', $news->id) }}">Lees meer</a>
+                        <a class="button more orange-background" href="{{ route('newsShow', $news->id) }}">Lees meer</a>
                     </div>
                 </div>
             </div>

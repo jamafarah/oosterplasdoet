@@ -15,7 +15,7 @@ class NewsController extends Controller
      */
     public function index() {
         try {
-            $news = News::orderByDesc('created_at')->get();
+            $news = News::orderBy('created_at')->get();
         } catch (ModelNotFoundException $e) {
             abort(404);
         }
