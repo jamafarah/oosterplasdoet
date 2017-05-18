@@ -15,7 +15,6 @@ class GunbanenInschrijvingenTable extends Migration
     {
         Schema::create('gunbanen_inschrijvingen', function(Blueprint $table) {
             $table->increments('id');
-            $table->dateTime('Inschrijving_Tijd')->default(DB::raw('CURRENT_TIMESTAMP'));
             $table->string('Naam', 255);
             $table->string('Email',254);
             $table->string('TelefoonNummer',20)->nullable();
@@ -23,6 +22,8 @@ class GunbanenInschrijvingenTable extends Migration
             $table->string('Adres',254);
             $table->string('Studie',254)->nullable();
             $table->string('cv')->nullable();
+            $table->dateTime('updated_at');
+            $table->dateTime('created_at');
         });
     }
 

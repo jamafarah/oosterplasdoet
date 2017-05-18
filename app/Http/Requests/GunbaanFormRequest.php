@@ -24,11 +24,11 @@ class GunbaanFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'naam' => 'required',
-            'email' => 'required|email',
-            'geboortedatum' => 'required|date',
-            'adres' => 'required',
-            'studie' => 'required'
+            'Naam' => 'required',
+            'Email' => 'required|email',
+            'Geboortedatum' => 'required|date',
+            'Adres' => 'required',
+            'Studie' => 'required'
         ];
     }
 }

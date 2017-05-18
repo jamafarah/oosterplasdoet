@@ -40,19 +40,6 @@
     <div class="container orange-background">
         <a class="btn btn-lg orange-background white pull-right" type="submit" style="margin-top: 10px; border-radius: 0;" href="../gunbanen"><b>Terug</b></a>
         <h1 class="white">Inschrijven</h1>
-        {{--<form>--}}
-            {{--<input type="text" placeholder="Naam" name="naam" class="signup-form-input input-lg"><br/>--}}
-            {{--<input type="date" placeholder="Geboortedatum" name="geboortedatum" class="signup-form-input input-lg"><br/>--}}
-            {{--<input type="text" placeholder="Adres" name="adres" class="signup-form-input input-lg"><br/>--}}
-            {{--<input type="text" placeholder="Laatst afgeronde studie" name="studie" class="signup-form-input input-lg "><br/>--}}
-            {{--<span class="btn btn-lg btn-file">--}}
-                {{--CV uploaden <input type="file" name="CV">--}}
-            {{--</span>--}}
-            {{--<br/>--}}
-
-
-            {{--<input type="button" value="Verzend inschrijving" class="btn btn-lg orange signup-send" >--}}
-        {{--</form>--}}
 
 
 
@@ -64,42 +51,42 @@
 
     {!! Form::open(array('route' => 'gunbaan_signup', 'class' => 'form')) !!}
         <div class="form-group">
-            {!! Form::text('naam', null,
+            {!! Form::text('Naam', null,
                 array('required',
                       'class'=>'signup-form-input input-lg',
                       'placeholder'=>'Naam')) !!}
         </div>
 
         <div class="form-group">
-            {!! Form::text('email', null,
+            {!! Form::text('Email', null,
                 array('required',
                       'class'=>'signup-form-input input-lg',
                       'placeholder'=>'Email')) !!}
         </div>
 
         <div class="form-group">
-            {!! Form::text('telefoon', null,
+            {!! Form::text('TelefoonNummer', null,
                 array('required',
                       'class'=>'signup-form-input input-lg',
                       'placeholder'=>'Telefoon nummer')) !!}
         </div>
 
         <div class="form-group">
-            {!! Form::date('geboortedatum', null,
+            {!! Form::date('Geboortedatum', null,
                 array('required',
                       'class'=>'signup-form-input input-lg',
                       'placeholder'=>'Geboortedatum')) !!}
         </div>
 
         <div class="form-group">
-            {!! Form::text('adres', null,
+            {!! Form::text('Adres', null,
                 array('required',
                       'class'=>'signup-form-input input-lg',
                       'placeholder'=>'Adres')) !!}
         </div>
 
         <div class="form-group">
-            {!! Form::text('studie', null,
+            {!! Form::text('Studie', null,
                 array('',
                       'class'=>'signup-form-input input-lg',
                       'placeholder'=>'Laatst afgeronde studie')) !!}
