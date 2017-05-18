@@ -9,6 +9,7 @@
             <li><a href="{{ url('/bewoners') }}">buurtbewoners</a></li>
             <li><a href="{{ url('/sponsoren') }}">onze sponsoren</a></li>
             <li><a href="{{ url('/about') }}">over ons</a></li>
+            <li><a href="{{ url('/gunbanen') }}">gunbanen</a></li>
         </ul>
     </nav>
 </header>

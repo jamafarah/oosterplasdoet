@@ -210,6 +210,82 @@ i.fa.fa-5x:hover {
 .side-form {
   border-left: 2px solid #ef6c33; }
 
+
+.signup-form-input {
+  text-decoration-color: white;
+  background-color: #ef6c33;
+  border-style: solid;
+  border-left-color: white;
+  border-right: hidden;
+  border-top: hidden;
+  border-radius: 0;
+  margin-bottom: 2vh;
+  width: 30vw;
+}
+
+.signup-form-input, input.middle:focus {
+  outline-width: 0;
+}
+
+.signup-form-input, textarea{
+  color: white;
+}
+
+
+.signup-form-input,::-webkit-input-placeholder { /* Chrome */
+  color: whitesmoke;
+}
+.signup-form-input,:-ms-input-placeholder { /* IE 10+ */
+  color: whitesmoke;
+}
+.signup-form-input,::-moz-placeholder { /* Firefox 19+ */
+  color: whitesmoke;
+  opacity: 1;
+}
+.signup-form-input,:-moz-placeholder { /* Firefox 4 - 18 */
+  color: whitesmoke;
+  opacity: 1;
+}
+
+.signup-send {
+  border-radius: 0;
+  background-color: white;
+}
+
+.file {
+  visibility: hidden;
+  position: absolute;
+}
+
+
+.btn-file {
+  position: relative;
+  overflow: hidden;
+  background: #ef6c33;
+  border-radius: 0;
+  color: whitesmoke;
+  border-left-color: white;
+  border-radius: 0;
+  margin-bottom: 2vh;
+  border: solid 2px;
+}
+.btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: #ef6c33;
+  cursor: inherit;
+  display: block;
+  border-radius: 0;
+}
+
 .row-1 {
   min-height: 8.33vh; }
 
