@@ -7,6 +7,7 @@ use App\GunbanenInschrijvingen;
 use Illuminate\Http\Request;
 use App\Http\Requests\GunbaanFormRequest;
 use Illuminate\Support\Facades\DB;
+use Session;
 
 class GunbaanController extends Controller
 {
@@ -41,6 +42,8 @@ class GunbaanController extends Controller
                 $message->from('OosterplasGOET@OosterplasGOET.nl');
                 $message->to($gunbaanSignup->Email,$gunbaanSignup->Naam)->subject('Inschrijving Gunbanen compleet');
             });
+        Session::flash('success', 'Uw aanvraag is verzonden');
+
         return redirect('gunbanen');
 
 
