@@ -72,3 +72,7 @@ Route::get('about', function () {
 Route::get('partners', function () {
     return view('partners');
 });
+
+Route::get('about', function () {
+    return view('overons');
+});
