@@ -98,7 +98,7 @@ $(document).ready(function() {
             "<br />"+
 
             "<label for=\"appendices[" + newId + "][birthdate]\">Geboortedatum</label>"+
-            "<input required=\"required\" class=\"form-control datepicker\" name=\"appendices[" + newId + "][birthdate]\" type=\"date\" id=\"appendices[0][birthdate]\">"+
+            "<input required=\"required\" id=\"birthdate-" + newId + "\" class=\"form-control datepicker\" name=\"appendices[" + newId + "][birthdate]\" type=\"date\" id=\"appendices[0][birthdate]\">"+
             "<br />"+
             "<span class=\"btn vague-orange-background remove\" style=\"border-radius: 0; color: #fff\">Verwijder bovenstaand aanhangsel</span>"+
         "</div>";
@@ -107,12 +107,12 @@ $(document).ready(function() {
 
 
 
-    $(".datepicker").datepicker({
-        changeMonth: true,
-        changeYear: true,
-        yearRange: '1930:{{ date('Y') }}',
-        dateFormat: 'yy-mm-dd'
-    })
+        $("#birthdate-" + newId).datepicker({
+            changeMonth: true,
+            changeYear: true,
+            yearRange: '1930:{{ date('Y') }}',
+            dateFormat: 'yy-mm-dd'
+        })
     });
 
     $(".appendices").on("click", ".remove", function (){

@@ -26,7 +26,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
  *
  * @package App\Models
  */
-class GunbanenInschrijvingen extends Eloquent
+class GunbanenInschrijvingen extends Model
 {
     use SoftDeletes;
 	protected $table = 'gunbanen_inschrijvingen';
