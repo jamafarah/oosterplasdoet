@@ -41,6 +41,15 @@ class GunbaanController extends Controller
                 $message->from('OosterplasGOET@OosterplasGOET.nl');
                 $message->to($gunbaanSignup->Email,$gunbaanSignup->Naam)->subject('Inschrijving Gunbanen compleet');
             });
+
+        \Mail::send('mails.gunbaaninschrijvingorg',
+            [
+                'gunbaanSignup' => $gunbaanSignup
+            ], function($message) use ($gunbaanSignup)
+            {
+                $message->from($gunbaanSignup->Email);
+                $message->to('OosterplasGOET@OosterplasGOET.nl',$gunbaanSignup->Naam)->subject('Nieuwe inschrijving Gunbanen');
+            });
         return redirect('gunbanen');
 
 
