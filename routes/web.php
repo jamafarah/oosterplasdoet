@@ -76,3 +76,29 @@ Route::get('partners', function () {
 Route::get('about', function () {
     return view('overons');
 });
+Auth::routes();
+
+Route::get('/beheerder', 'AdminController@index')->name('beheerder');
+
+
+Route::get('/logout', 'AdminController@logout')->name('beheerder');
+
+// edit routes
+
+Route::get('/editnews', 'EditController@newsindex')->name('beheerder');
+
+Route::get('/addnews', 'EditController@addnews')->name('beheerder');
+
+Route::get('changenews/{id}', 'EditController@changenews')->name('changenews');
+Route::get('deletenews/{id}', 'EditController@deletenews')->name('deletenews');
+
+Route::post('updatenews',
+    ['as' => 'updatenews', 'uses' => 'EditController@updatenews']);
+
+Route::post('/addnews',
+    ['as' => 'createnews', 'uses' => 'EditController@createnews']);
+
+Route::get('/editevent', 'EditController@editevent')->name('beheerder');
+
+Route::get('/editsponsor', 'EditController@editsponsor')->name('beheerder');
+
