@@ -23,8 +23,8 @@
 	<div class="container" id="test2">
 
 		<!-- Titel voor de pagina met bijbehorende text -->
-		<div class="row">
-			<div class="slogan" style="width: calc(100vw - 300px); background-color: white; min-height: 184px; margin-top: -60px; padding-top: 20px; text-align: center;"><h1 class="vague-green"><u>Samen werken met elkaar!</u></h1><p>Oosterplas werkt graag samen met initiatiefnemers, verenigingen, organisaties en bedrijven</p> <p>Wil jij ook deelnemen? stuur dan een bericht naar oosterplas@gmail.com</p></div>
+		<div class="row"  style="width: calc(100vw - 300px); background-color: white; min-height: 184px; margin-top: -60px; padding-top: 20px; text-align: center;">
+				{!! $content->content !!}
 		</div>
 		
 		<!-- Grid met afbeeldingen van alle bedrijven -->

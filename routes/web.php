@@ -41,7 +41,7 @@ Route::get('signup/{id}', 'SignUpController@getSignUp')->name("signup");
 Route::post('signup/{id}', 'SignUpController@postSignUp');
 
 
-Route::get('gunbanen', function () {
+Route::get('gunbanen', ['uses' => 'GunbaanController@index'], function () {
     return view('gunbanen');
 });
 
@@ -69,9 +69,8 @@ Route::get('about', function () {
     return view('underconstruction');
 });
 
-Route::get('partners', function () {
-    return view('partners');
-});
+Route::get('partners', 'PartnerController@getIndex');
+
 
 Route::get('about', function () {
     return view('overons');
@@ -114,4 +113,14 @@ Route::post('/addevent',
     ['as' => 'createevent', 'uses' => 'EditController@createevent']);
 
 Route::get('/editsponsor', 'EditController@editsponsor')->name('beheerder');
+
+
+
+Route::get('/editpages', 'PageEditController@index')->name('beheerder');
+
+Route::get('/editpage/{page}', ['uses' =>'PageEditController@editpage']);
+
+Route::post('/updatepagecontent',
+    ['as' => 'updatepagecontent', 'uses' => 'PageEditController@updatepagecontent']);
+
 

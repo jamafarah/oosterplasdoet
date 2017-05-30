@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Mail;
+use App\WebsiteText;
 use App\GunbanenInschrijvingen;
 use Illuminate\Http\Request;
 use App\Http\Requests\GunbaanFormRequest;
@@ -11,6 +12,11 @@ use Session;
 
 class GunbaanController extends Controller
 {
+    public function index()
+    {
+        $content = WebsiteText::where('textarea_name', 'gunbanen')->firstOrFail();
+        return view('gunbanen')->with(compact('content'));
+    }
     public function create()
     {
         return view('gunbanenSignUp');

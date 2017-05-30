@@ -22,11 +22,11 @@
                         <a class="btn btn-lg orange-background white" type="submit" style="margin-top: 10px; border-radius: 0; top: calc(50vh)" href="/editnews"><b>Nieuwsberichten</b></a>
                         <a class="btn btn-lg orange-background white" type="submit" style="margin-top: 10px; border-radius: 0; top: calc(50vh)" href="/editevent"><b>Evenementen</b></a>
                         <a class="btn btn-lg orange-background white" type="submit" style="margin-top: 10px; border-radius: 0; top: calc(50vh)" href="/editsponsor"><b>Partners/Sponsoren</b></a>
+                        <a class="btn btn-lg orange-background white" type="submit" style="margin-top: 10px; border-radius: 0; top: calc(50vh)" href="/editpages"><b>Pagina text aanpassen</b></a>
                     </div>
                     </div>
                 </div>
             </div>
-
 
 
 
