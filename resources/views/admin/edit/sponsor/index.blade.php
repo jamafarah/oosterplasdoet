@@ -4,7 +4,7 @@
 @section('content')
 
     <link rel="stylesheet" href="{{ ('css/app.css') }}">
-    <div class="banner row-2 orange-background">
+    <div class="banner row-3 orange-background" style="background-image: url(http://www.oosterplasdoet.nl/wp-content/uploads/2016/03/cropped-IMG_7544-1.jpg);">
 
         <h1 class="white">Beheer Nieuwsberichten</h1>
     </div>
