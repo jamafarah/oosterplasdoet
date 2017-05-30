@@ -55,7 +55,7 @@ class PageEditController extends Controller
             abort(404);
         }
         if ($this->isadmin()) {
-            return view('admin/pageedit/gunbaanedit')->with(compact('text'));
+            return view('admin/pageedit/editpage')->with(compact('text'));
         }
         else
         {
@@ -73,7 +73,7 @@ class PageEditController extends Controller
             abort(404);
         }
         if ($this->isadmin()) {
-            return view('admin/pageedit/gunbaanedit')->with(compact('text'));
+            return view('admin/pageedit/editpage')->with(compact('text'));
         }
         else
         {
