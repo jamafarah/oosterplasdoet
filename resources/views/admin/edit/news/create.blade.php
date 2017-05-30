@@ -31,7 +31,6 @@
 
 
 
-        <div class="container" >
             <a class="btn btn-lg orange-background white pull-right" type="submit" style="margin-top: 10px; border-radius: 0;" href="../editnews"><b>Terug</b></a>
             <h1 class="white">Inschrijven</h1>
 
@@ -82,7 +81,6 @@
 
             {!! Form::close() !!}
 
-        </div>
 
     </div>
 

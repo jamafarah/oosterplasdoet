@@ -14,6 +14,7 @@ class Event extends Model {
 
 	protected $dates = ['deleted_at'];
 
+    protected $fillable = array('name', 'content','startDate','endDate' );
 	public function signups()
 	{
 		return $this->hasMany(Signup::class);

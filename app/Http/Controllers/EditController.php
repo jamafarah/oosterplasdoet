@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\News;
+use App\Event;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\NewsFormRequest;
+use App\Http\Requests\EventFormRequest;
 
 
 class EditController extends Controller
@@ -106,10 +108,17 @@ class EditController extends Controller
 
     }
 
-    public function editevent()
+
+
+    public function eventindex()
     {
+        try {
+            $event = Event::all();
+        } catch (ModelNotFoundException $e) {
+            abort(404);
+        }
         if ($this->isadmin()) {
-            return view('admin/edit/event/index');
+            return view('admin/edit/event/index')->with(compact('event'));
         }
         else
         {
@@ -117,6 +126,53 @@ class EditController extends Controller
         }
     }
 
+    public function addevent()
+    {
+        if ($this->isadmin()) {
+            return view('admin/edit/event/create');
+        }
+        else
+        {
+            return redirect('/');
+        }
+    }
+
+    public function createevent(EventFormRequest $request)
+    {
+        $createevent = new Event();
+        $createevent->fill($request->all());
+        $createevent->save();
+        return redirect('editevent');
+    }
+
+    public function changeevent($id) {
+        try {
+            $event = Event::findOrFail($id);
+        } catch (ModelNotFoundException $e) {
+            abort(404);
+        }
+
+        return view('admin/edit/event/edit')->with(compact('event'));
+    }
+
+
+
+    public function updateevent(EventFormRequest $request)
+    {
+        $event = Event::findOrFail($request->id);
+        $event->fill($request->all());
+        $event->save();
+        return redirect('editevent');
+
+    }
+
+    public function deleteevent($id)
+    {
+        $event = Event::findOrFail($id);
+        $event->delete();
+        return redirect('editevent');
+
+    }
 
     public function editsponsor()
     {

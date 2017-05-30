@@ -31,6 +31,7 @@
 
 
 
+        <div class="container" >
             <a class="btn btn-lg orange-background white pull-right" type="submit" style="margin-top: 10px; border-radius: 0;" href="../editnews"><b>Terug</b></a>
             <h1 class="white">Inschrijven</h1>
 
@@ -45,7 +46,7 @@
             {!! Form::open(array('route' => 'updatenews', 'class' => 'form')) !!}
 
 
-                {!! Form::hidden('id', $news->id, ['readonly']) !!}
+            {!! Form::hidden('id', $news->id, ['readonly']) !!}
 
 
             <div class="form-group">
@@ -84,6 +85,7 @@
 
             {!! Form::close() !!}
 
+        </div>
 
     </div>
 

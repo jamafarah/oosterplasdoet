@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{{ ('css/app.css') }}">
     <div class="banner row-2 orange-background">
 
-        <h1 class="white">Beheer Nieuwsberichten</h1>
+        <h1 class="white">Beheer Evenementen</h1>
     </div>
     @if (Session::has('success'))
         <div class="container">
@@ -31,7 +31,7 @@
 
 
 
-            <a class="btn btn-lg orange-background white pull-right" type="submit" style="margin-top: 10px; border-radius: 0;" href="../editnews"><b>Terug</b></a>
+            <a class="btn btn-lg orange-background white pull-right" type="submit" style="margin-top: 10px; border-radius: 0;" href="../editevent"><b>Terug</b></a>
             <h1 class="white">Inschrijven</h1>
 
 
@@ -42,45 +42,38 @@
                 @endforeach
             </ul>
 
-            {!! Form::open(array('route' => 'updatenews', 'class' => 'form')) !!}
-
-
-                {!! Form::hidden('id', $news->id, ['readonly']) !!}
+            {!! Form::open(array('route' => 'createevent', 'class' => 'form')) !!}
 
 
             <div class="form-group">
-                {!! Form::label('titel', 'Titel') !!}
-                {!! Form::text('title', $news->title, ['required'=>'required', 'class'=>'form-control' ]) !!}
+                {!! Form::label('name', 'name') !!}
+                {!! Form::text('name', '', ['required'=>'required', 'class'=>'form-control']) !!}
             </div>
 
-
-            <div class="form-group">
-                {!! Form::label('slug', 'slug') !!}
-                {!! Form::text('slug', $news->slug, ['required'=>'required', 'class'=>'form-control']) !!}
-            </div>
-
-
-            <div class="form-group">
-                {!! Form::label('img', 'img') !!}
-                {!! Form::text('img', $news->img, ['required'=>'required', 'class'=>'form-control']) !!}
-            </div>
-
-            <div class="form-group">
-                {!! Form::label('intro', 'intro') !!}
-                {!! Form::text('intro', $news->intro, ['required'=>'required', 'class'=>'form-control']) !!}
-            </div>
 
             <div class="form-group">
                 {!! Form::label('content', 'content') !!}
-                {!! Form::textarea('content', $news->content, ['required'=>'required', 'class'=>'form-control']) !!}
+                {!! Form::text('content', '', ['required'=>'required', 'class'=>'form-control']) !!}
             </div>
+
+
+            <div class="form-group">
+                {!! Form::label('startDate', 'startDate') !!}
+                {!! Form::date('startDate', '', ['required'=>'required', 'class'=>'form-control']) !!}
+            </div>
+
+            <div class="form-group">
+                {!! Form::label('endDate', 'endDate') !!}
+                {!! Form::date('endDate', '', ['required'=>'required', 'class'=>'form-control']) !!}
+            </div>
+
 
 
 
 
             <br/> <br/> <br/>
 
-            {!! Form::submit('Aanpassen', ['class' => 'btn btn-lg vague-orange-background', 'style' => 'border-radius: 0; color: #fff']) !!}
+            {!! Form::submit('Aanmaken', ['class' => 'btn btn-lg vague-orange-background', 'style' => 'border-radius: 0; color: #fff']) !!}
 
             {!! Form::close() !!}
 

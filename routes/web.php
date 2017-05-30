@@ -98,7 +98,19 @@ Route::post('updatenews',
 Route::post('/addnews',
     ['as' => 'createnews', 'uses' => 'EditController@createnews']);
 
-Route::get('/editevent', 'EditController@editevent')->name('beheerder');
+
+Route::get('/editevent', 'EditController@eventindex')->name('beheerder');
+
+Route::get('/addevent', 'EditController@addevent')->name('beheerder');
+
+Route::get('changeevent/{id}', 'EditController@changeevent')->name('changeevent');
+Route::get('deleteevent/{id}', 'EditController@deleteevent')->name('deleteevent');
+
+Route::post('updateevent',
+    ['as' => 'updateevent', 'uses' => 'EditController@updateevent']);
+
+Route::post('/addevent',
+    ['as' => 'createevent', 'uses' => 'EditController@createevent']);
 
 Route::get('/editsponsor', 'EditController@editsponsor')->name('beheerder');
 
