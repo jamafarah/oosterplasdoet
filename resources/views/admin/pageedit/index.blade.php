@@ -22,6 +22,7 @@
                         <a class="btn btn-lg orange-background white" type="submit" style="margin-top: 10px; border-radius: 0; top: calc(50vh)" href="/editpage/gunbanen"><b>Gunbanen pagina</b></a>
                         <a class="btn btn-lg orange-background white" type="submit" style="margin-top: 10px; border-radius: 0; top: calc(50vh)" href="/editpage/homepagina"><b>Home pagina</b></a>
                         <a class="btn btn-lg orange-background white" type="submit" style="margin-top: 10px; border-radius: 0; top: calc(50vh)" href="/editpage/partners"><b>Partner pagina</b></a>
+                        <a class="btn btn-lg orange-background white" type="submit" style="margin-top: 10px; border-radius: 0; top: calc(50vh)" href="/editpage/overons"><b>Over Ons pagina</b></a>
                     </div>
             </div>
         </div>

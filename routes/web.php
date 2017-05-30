@@ -72,9 +72,8 @@ Route::get('about', function () {
 Route::get('partners', 'PartnerController@getIndex');
 
 
-Route::get('about', function () {
-    return view('overons');
-});
+Route::get('about', 'OverOnsController@getIndex');
+
 Auth::routes();
 
 Route::get('/beheerder', 'AdminController@index')->name('beheerder');
