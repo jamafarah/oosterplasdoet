@@ -34,7 +34,6 @@
         @if (count($event) > 0)
             <table>
                 <th>Naam</th>
-                <th>Inhoud</th>
                 <th>Start op</th>
                 <th>Eindigd op</th>
                 <th > <span class="glyphicon glyphicon-user"></span>Inschrijvingen</th>
@@ -43,7 +42,6 @@
                 @foreach ($event AS $event)
                     <tr>
                         <td> {!! $event->name !!} </td>
-                        <td> {!! $event->content !!} </td>
                         <td> {!! $event->startDate !!} </td>
                         <td> {!! $event->endDate !!} </td>
                         <td><center> <a class="glyphicon glyphicon-user"  href="{{ route('signupsevent', $event->id) }}"> Inschrijvingen</a></center> </td>

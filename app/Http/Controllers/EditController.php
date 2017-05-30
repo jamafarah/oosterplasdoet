@@ -173,8 +173,12 @@ class EditController extends Controller
 
     public function createevent(EventFormRequest $request)
     {
+        $startdate = date('Y-m-d H:i:s', strtotime("$request->startDate $request->startTime"));
+        $enddate = date('Y-m-d H:i:s', strtotime("$request->endDate $request->endTime"));
         $createevent = new Event();
         $createevent->fill($request->all());
+        $createevent->fill(['startDate' => $startdate]);
+        $createevent->fill(['endDate' => $enddate]);
         $createevent->save();
         return redirect('editevent');
     }
@@ -203,8 +207,12 @@ class EditController extends Controller
 
     public function updateevent(EventFormRequest $request)
     {
+        $startdate = date('Y-m-d H:i:s', strtotime("$request->startDate $request->startTime"));
+        $enddate = date('Y-m-d H:i:s', strtotime("$request->endDate $request->endTime"));
         $event = Event::findOrFail($request->id);
         $event->fill($request->all());
+        $event->fill(['startDate' => $startdate]);
+        $event->fill(['endDate' => $enddate]);
         $event->save();
         return redirect('editevent');
 

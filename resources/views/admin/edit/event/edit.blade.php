@@ -65,11 +65,20 @@
                 {!! Form::date('startDate', Carbon\Carbon::parse($event->startDate), ['required'=>'required', 'class'=>'form-control']) !!}
             </div>
 
+        <div class="form-group">
+            {!! Form::label('startTime', 'startTime') !!}
+            {!! Form::time('startTime', Carbon\Carbon::parse($event->startDate)->toTimeString(), ['required'=>'required', 'class'=>'form-control']) !!}
+        </div>
+
 
             <div class="form-group">
                 {!! Form::label('endDate', 'endDate') !!}
                 {!! Form::date('endDate', Carbon\Carbon::parse($event->endDate), ['required'=>'required', 'class'=>'form-control']) !!}
             </div>
+        <div class="form-group">
+            {!! Form::label('endTime', 'endTime') !!}
+            {!! Form::time('endTime', Carbon\Carbon::parse($event->endDate)->toTimeString(), ['required'=>'required', 'class'=>'form-control']) !!}
+        </div>
 
 
 

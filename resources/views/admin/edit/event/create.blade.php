@@ -61,12 +61,20 @@
                 {!! Form::label('startDate', 'startDate') !!}
                 {!! Form::date('startDate', '', ['required'=>'required', 'class'=>'form-control']) !!}
             </div>
+        <div class="form-group">
+            {!! Form::label('startTime', 'startTime') !!}
+            {!! Form::time('startTime', '', ['required'=>'required', 'class'=>'form-control']) !!}
+        </div>
 
-            <div class="form-group">
+
+        <div class="form-group">
                 {!! Form::label('endDate', 'endDate') !!}
                 {!! Form::date('endDate', '', ['required'=>'required', 'class'=>'form-control']) !!}
             </div>
-
+        <div class="form-group">
+            {!! Form::label('endTime', 'endTime') !!}
+            {!! Form::time('endTime', '', ['required'=>'required', 'class'=>'form-control']) !!}
+        </div>
 
 
 
