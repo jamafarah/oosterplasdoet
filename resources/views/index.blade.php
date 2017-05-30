@@ -9,10 +9,10 @@
     <div class="slogan">
         <h1 class="green">We halen samen meer uit onze wijk!</h1>
         <p>
-            Stichting OosterplasDOET! is er als wijkonderneming in de wijken ‘s-Hertogenbosch Oost en Hintham om mensen
+            Stichting OosterplasDOET! is er als wijkonderneming in de wijken â€˜s-Hertogenbosch Oost en Hintham om mensen
             en
-            organisaties te verbinden. Dit doen we door het coördineren en stimuleren van activiteiten op het gebied van
-            onderwijs, arbeid, sport, cultuur en zorg & welzijn. Met als speerpunten huiswerkbegeleiding en
+            organisaties te verbinden. Dit doen we door het coÃ¶rdineren en stimuleren van activiteiten op het gebied van
+            onderwijs, arbeid, sport, cultuur en zorg & welzijn. Met als speerpunten studie begeleiding en
             gunbanen.
         </p>
     </div>
@@ -22,7 +22,7 @@
 
             </div>
             <div class="blurred contentPane">
-                <h3 class="orange">Huiswerk begeleiding</h3>
+                <h3 class="orange">Studie begeleiding</h3>
                 <p>
                     De begeleiding helpt je om je studie goed te kunnen volgen, je leert hoe je het beste kunt leren en je krijgt hiervoor coaching om zelfstandig aan de slag te kunnen.
                     Je leert plannen en je krijgt begeleiding om je brugklas jaar goed aan te pakken. Dit alles vindt plaats bij de Biechten en er is tussentijds ook ruimte om even lekker
@@ -39,10 +39,10 @@
             <div class="blurred contentPane">
                 <h3 class="green">Gunbanen</h3>
                 <p>
-                    “Het project 'gunbanen' is een pilot. Verenigingen rondom de Oosterplas willen zich graag inzetten werkloze Bossche jongeren.
-                    Het doel is om hen aan een betaalde baan te krijgen. Jongeren zetten zich vrijwillig in bij één van de dertien verenigingen in Den Bosch Oost.
+                    â€œHet project 'gunbanen' is een pilot. Verenigingen rondom de Oosterplas willen zich graag inzetten werkloze Bossche jongeren.
+                    Het doel is om hen aan een betaalde baan te krijgen. Jongeren zetten zich vrijwillig in bij Ã©Ã©n van de dertien verenigingen in Den Bosch Oost.
                     Met behoud van hun uitkering, en zonder de sollicitatieplicht.
-                    In ruil voor het geleverde werk en getoonde motivatie gaat Oosterplas doet! na een half jaar binnen het netwerk van vijfduizend leden op zoek naar een betaalde baan.”
+                    In ruil voor het geleverde werk en getoonde motivatie gaat Oosterplas doet! na een half jaar binnen het netwerk van vijfduizend leden op zoek naar een betaalde baan.â€�
                 </p>
                 <button class="more orange-background">Lees meer</button>
             </div>
@@ -67,7 +67,7 @@
             <div class="row image thumbnail" style="background-image: url(http://www.oosterplasdoet.nl/wp-content/uploads/2016/03/IMG_6991-e1465718742680.jpg)"></div>
             <h3 class="orange title">BAGGERLOOP 2016</h3>
             <h3 class="orange date">20/3/2016</h3>
-            <p>Baggerloop is een jaarlijks evenement dat georganiseerd wordt in samenwerking met ‘S-PORT. Basisschool scholieren van diverse scholen lopen op vrijdagochtend een rondje rond de Oosterplas en moeten daarbij allerlei obstakels trotseren.</p>
+            <p>Baggerloop is een jaarlijks evenement dat georganiseerd wordt in samenwerking met â€˜S-PORT. Basisschool scholieren van diverse scholen lopen op vrijdagochtend een rondje rond de Oosterplas en moeten daarbij allerlei obstakels trotseren.</p>
         </div>
         <div class="col-xs-12 col-md-4 row-6 highlightBlock">
             <div class="row image thumbnail" style="background-image: url(http://www.oosterplasdoet.nl/wp-content/uploads/2016/03/IMG_6892-e1465718042625.jpg)"></div>
@@ -75,7 +75,7 @@
             <h3 class="orange date">9/7/17</h3>
             <p>Dit jaar liepen er weer ongeveer 650 leerlingen mee. Het was opnieuw een groot succes.
 
-                Het weer was mooi en de kinderen enthousiast. Voor meer foto’s kunt u terecht op onze facebook pagina. OosterplasDOET!</p>
+                Het weer was mooi en de kinderen enthousiast. Voor meer fotoâ€™s kunt u terecht op onze facebook pagina. OosterplasDOET!</p>
         </div>
     </div>
 </div>
@@ -133,7 +133,89 @@
         </div>
     </div>
 
-    <!-- font awesoem -->
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<!-- Footer by Gerjan -->
+	
+	<style>
+		.koptext{
+			font-size: 20px;
+		}
+
+		.tablefooter{
+			width: 100%;
+			margin-left: 30px;
+			margin-right: 30px;
+			margin-top: 15px;
+		}
+		.tablefooter tr td {
+			color: black;
+			font: "Bebas Neue";
+		}
+		.tablefooter tr td a {
+			color: black;
+		}
+		#indexFooter{
+			height: auto;
+			background-size: cover;
+			background-color: #ef6c33;
+		}
+
+	</style>
+
+	<div class="col-xs-12 col-md-12" id="indexFooter">
+		<table class="tablefooter">
+			<tr>
+				<td class="koptext">Over OosterplasDOET!</td>
+				<td class="koptext">Vragen OosterplasDOET!</td>
+				<td class="koptext">Duurzaam OosterplasDOET!</td>
+				<td class="koptext">Officiële stukken</td>
+			</tr>
+			<tr>
+				<td><a href="#">Wie zijn wij</a></td>
+				<td><a href="#">Contact</a></td>
+				<td><a href="#">Verantwoord</a></td>
+				<td><a href="#">Doelstelling</a></td>
+			</tr>
+			<tr>
+				<td><a href="#">Even voorstellen</a></td>
+				<td><a href="#">FAQ</a></td>
+				<td><a href="#">Duurzaamheid</a></td>
+				<td><a href="#">Beleidsplan</a></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><a href="#">Cookies</a></td>
+				<td></td>
+				<td><a href="#">Activiteitenplan</a></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><a href="#">Financiële verantwoording</a></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><a href="#">Accountantsverklaring</a></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><a href="#">Notulen</a></td>
+			</tr>
+		</table>
+	</div>
+	
+	
+
+
+
+
+
 
 @endsection
