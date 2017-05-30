@@ -31,30 +31,48 @@
 
         <a class="btn btn-lg orange-background white" type="submit" style="margin-top: 10px; border-radius: 0; top: calc(50vh)" href="/addevent"><b><span class="glyphicon glyphicon-plus"> </span>Nieuw evenement</b></a>
         <a class="btn btn-lg orange-background white pull-right" type="submit" style="margin-top: 10px; border-radius: 0;" href="../beheerder"><b>Terug</b></a>
-        @if (count($event) > 0)
+
             <table>
                 <th>Naam</th>
                 <th>Inhoud</th>
                 <th>Start op</th>
                 <th>Eindigd op</th>
-                <th > <span class="glyphicon glyphicon-user"></span>Inschrijvingen</th>
-                <th > <span class="glyphicon glyphicon-pencil"></span>Aanpassen</th>
-                <th > <span class="glyphicon glyphicon-remove-sign"></span>Verwijderen</th>
-                @foreach ($event AS $event)
+
                     <tr>
                         <td> {!! $event->name !!} </td>
                         <td> {!! $event->content !!} </td>
                         <td> {!! $event->startDate !!} </td>
                         <td> {!! $event->endDate !!} </td>
-                        <td><center> <a class="glyphicon glyphicon-user"  href="{{ route('signupsevent', $event->id) }}"> Inschrijvingen</a></center> </td>
-                        <td><center> <a class="glyphicon glyphicon-pencil"  href="{{ route('changeevent', $event->id) }}"> Aanpassen</a></center> </td>
-                        <td> <center><a class="glyphicon glyphicon-remove-sign"  href="{{ route('deleteevent', $event->id) }}"> Verwijderen</a></center> </td>
                     </tr>
-                @endforeach
             </table>
-        @else
-            <p>Geen nieuws gevonden</p>
-        @endif
+
+    <H2>Inschrijvingen</H2>
+        <table>
+            <tr>
+                <th>first_name</th>
+                <th>last_name</th>
+                <th>birthdate</th>
+                <th>emailaddress</th>
+                <th>Aanhang van</th>
+            </tr>
+            @foreach ($event->signups()->get() AS $signup)
+            <tr>
+                <td>{!! $signup->first_name !!} </td>
+                <td>{!! $signup->last_name !!} </td>
+                <td>{!! $signup->birthdate !!} </td>
+                <td>{!! $signup->emailaddress !!} </td>
+                @foreach ($signup->appendices()->get() AS $signup)
+                    <tr>
+                        <td>{!! $signup->first_name !!} </td>
+                        <td>{!! $signup->last_name !!} </td>
+                        <td>{!! $signup->birthdate !!} </td>
+                        <td>{!! $signup->emailaddress !!} </td>
+                        <td>{!! $signup->first_name !!} </td>
+                    </tr>
+                    @endforeach
+            </tr>
+                @endforeach
+        </table>
 
     </div>
 

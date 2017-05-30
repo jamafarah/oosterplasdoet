@@ -103,6 +103,7 @@ Route::get('/editevent', 'EditController@eventindex')->name('beheerder');
 
 Route::get('/addevent', 'EditController@addevent')->name('beheerder');
 
+Route::get('signupsevent/{id}', 'EditController@signupsevent')->name('signupsevent');
 Route::get('changeevent/{id}', 'EditController@changeevent')->name('changeevent');
 Route::get('deleteevent/{id}', 'EditController@deleteevent')->name('deleteevent');
 

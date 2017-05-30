@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\News;
 use App\Event;
+use App\Signup;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\NewsFormRequest;
@@ -153,6 +154,16 @@ class EditController extends Controller
         }
 
         return view('admin/edit/event/edit')->with(compact('event'));
+    }
+
+    public function signupsevent($id) {
+        try {
+            $event = Event::findOrFail($id);
+        } catch (ModelNotFoundException $e) {
+            abort(404);
+        }
+
+        return view('admin/edit/event/signups')->with(compact('event'));
     }
 
 
