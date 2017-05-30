@@ -56,7 +56,7 @@
 
             <div class="form-group">
                 {!! Form::label('content', 'content') !!}
-                {!! Form::text('content', $event->content, ['required'=>'required', 'class'=>'form-control']) !!}
+                {!! Form::textarea('content', $event->content, ['required'=>'required', 'class'=>'form-control','name'=>'content']) !!}
             </div>
 
 
@@ -83,6 +83,7 @@
 
     </div>
 
+    @include(('../editor'))
 
     <!-- font awesoem -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
