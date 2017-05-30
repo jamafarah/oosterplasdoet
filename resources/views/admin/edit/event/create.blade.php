@@ -42,7 +42,7 @@
                 @endforeach
             </ul>
 
-            {!! Form::open(array('route' => 'createevent', 'class' => 'form')) !!}
+            {!! Form::open(array('route' => 'createevent', 'class' => 'form', 'enctype'=>"multipart/form-data")) !!}
 
 
             <div class="form-group">
@@ -53,7 +53,7 @@
 
             <div class="form-group">
                 {!! Form::label('content', 'content') !!}
-                {!! Form::texta('content', '', ['required'=>'required', 'class'=>'form-control','name'=>'content']) !!}
+                {!! Form::textarea('content', '') !!}
             </div>
 
 

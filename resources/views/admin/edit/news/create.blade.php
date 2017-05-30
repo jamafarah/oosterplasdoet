@@ -42,7 +42,7 @@
                 @endforeach
             </ul>
 
-            {!! Form::open(array('route' => 'createnews', 'class' => 'form')) !!}
+            {!! Form::open(array('route' => 'createnews', 'class' => 'form', 'enctype'=>"multipart/form-data")) !!}
 
 
             <div class="form-group">
@@ -59,7 +59,7 @@
 
             <div class="form-group">
                 {!! Form::label('img', 'img') !!}
-                {!! Form::text('img', '', ['required'=>'required', 'class'=>'form-control']) !!}
+                {!! Form::file('img', '',array('class' => 'image')) !!}
             </div>
 
             <div class="form-group">
@@ -69,7 +69,7 @@
 
             <div class="form-group">
                 {!! Form::label('content', 'content') !!}
-                {!! Form::textarea('content', '', ['required'=>'required', 'class'=>'form-control','name'=>'content']) !!}
+                {!! Form::textarea('content', '') !!}
             </div>
 
 

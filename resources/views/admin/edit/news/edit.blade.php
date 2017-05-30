@@ -42,7 +42,7 @@
                 @endforeach
             </ul>
 
-            {!! Form::open(array('route' => 'updatenews', 'class' => 'form')) !!}
+            {!! Form::open(array('route' => 'updatenews', 'class' => 'form', 'enctype'=>"multipart/form-data")) !!}
 
 
                 {!! Form::hidden('id', $news->id, ['readonly']) !!}
@@ -60,12 +60,15 @@
             </div>
 
 
-            <div class="form-group">
-                {!! Form::label('img', 'img') !!}
-                {!! Form::text('img', $news->img, ['required'=>'required', 'class'=>'form-control']) !!}
-            </div>
 
-            <div class="form-group">
+
+        <div class="form-group">
+            {!! Form::label('img', 'img') !!}
+            {!! Form::file('img', '',array('class' => 'image')) !!}
+        </div>
+
+
+        <div class="form-group">
                 {!! Form::label('intro', 'intro') !!}
                 {!! Form::text('intro', $news->intro, ['required'=>'required', 'class'=>'form-control']) !!}
             </div>

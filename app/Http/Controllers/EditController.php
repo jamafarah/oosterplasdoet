@@ -74,8 +74,19 @@ class EditController extends Controller
 
     public function createnews(NewsFormRequest $request)
     {
+        $this->validate($request, [
+
+            'img' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+
+        ]);
+        $image = $request->file('img');
+        $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
+        $destinationPath = public_path('/img/nieuws');
+        $image->move($destinationPath, $input['imagename']);
+
         $createnews = new News();
         $createnews->fill($request->all());
+        $createnews->fill(['img' => $input['imagename']]);
         $createnews->save();
         return redirect('editnews');
     }
@@ -95,7 +106,29 @@ class EditController extends Controller
     public function updatenews(NewsFormRequest $request)
     {
         $news = News::findOrFail($request->id);
+
+        $this->validate($request, [
+
+            'img' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+
+        ]);
+
+        $image = $request->file('img');
+        if($image!=null)
+        {
+
+        $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
+        $destinationPath = public_path('/img/nieuws');
+        $image->move($destinationPath, $input['imagename']);
+            $curimg=$input['imagename'];
+        }
+        else
+        {
+            $curimg =$news->img;
+        }
+
         $news->fill($request->all());
+        $news->fill(['img' => $curimg]);
         $news->save();
         return redirect('editnews');
 
