@@ -59,9 +59,9 @@ class WebsiteTextSeeder extends Seeder
         ));
         WebsiteText::create(array(
             'textarea_name' => 'partners',
-            'content' => '<div class="row">
-			<div class="slogan" style="width: calc(100vw - 300px); background-color: white; min-height: 184px; margin-top: -60px; padding-top: 20px; text-align: center;"><h1 class="vague-green"><u>Samen werken met elkaar!</u></h1><p>Oosterplas werkt graag samen met initiatiefnemers, verenigingen, organisaties en bedrijven</p> <p>Wil jij ook deelnemen? stuur dan een bericht naar oosterplas@gmail.com</p></div>
-		</div>'
+            'content' => '
+			<div class="slogan" ><h1 class="vague-green"><u>Samen werken met elkaar!</u></h1><p>Oosterplas werkt graag samen met initiatiefnemers, verenigingen, organisaties en bedrijven</p> <p>Wil jij ook deelnemen? stuur dan een bericht naar oosterplas@gmail.com</p></div>
+		'
         ));
         WebsiteText::create(array(
             'textarea_name' => 'overons',
