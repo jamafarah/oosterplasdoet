@@ -34,13 +34,11 @@
 
             <table>
                 <th>Naam</th>
-                <th>Inhoud</th>
                 <th>Start op</th>
                 <th>Eindigd op</th>
 
                     <tr>
                         <td> {!! $event->name !!} </td>
-                        <td> {!! $event->content !!} </td>
                         <td> {!! $event->startDate !!} </td>
                         <td> {!! $event->endDate !!} </td>
                     </tr>
