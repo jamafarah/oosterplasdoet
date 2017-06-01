@@ -112,7 +112,7 @@
                     Wij zoeken graag naar feedback voor onze site en organiatie. <br>
                     Heb jij nog feedback of een idee voor ons? Laat dan hier achter. <br>
                     <br>
-                    Vul eventueel je naam en email adres in zodat wij je terug kunnen mailen!
+                    Vul evenuteel je naam en email adres in zodat wij je terug kunnen mailen!
                 </p>
                 <form class="feedback-form" action="#">
                     <label for="name">naam: </label><input placeholder="naam" name="naam" type="text"><br>
@@ -135,7 +135,7 @@
 		}
 
 		.tablefooter{
-			width: 100%;
+			width: 99%;
 			margin-left: 30px;
 			margin-right: 30px;
 			margin-top: 15px;

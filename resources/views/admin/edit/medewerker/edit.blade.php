@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{{ ('css/app.css') }}">
     <div class="banner row-2 orange-background">
 
-        <h1 class="white">Beheer Nieuwsberichten</h1>
+        <h1 class="white">Beheer Medewerkers</h1>
     </div>
     @if (Session::has('success'))
         <div class="container">
