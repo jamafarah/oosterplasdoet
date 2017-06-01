@@ -15,7 +15,7 @@ class PartnerSeeder extends Seeder {
             'url' => 'http://debiechten.nl/',
             'type' => 'Partner',
             'beschrijving' => 'De Biechten faciliteert en denkt mee met allerlei activiteiten en het KEFO in het bijzonder',
-            'img' => 'logo-de-biechten.pn'
+            'img' => 'logo-de-biechten.png'
         ));
         Sponsor::create(array(
             'naam' => 'de poort',
