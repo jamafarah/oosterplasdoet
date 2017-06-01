@@ -112,7 +112,7 @@
                     Wij zoeken graag naar feedback voor onze site en organiatie. <br>
                     Heb jij nog feedback of een idee voor ons? Laat dan hier achter. <br>
                     <br>
-                    Vul evenuteel je naam en email adres in zodat wij je terug kunnen mailen!
+                    Vul eventueel je naam en email adres in zodat wij je terug kunnen mailen!
                 </p>
                 <form class="feedback-form" action="#">
                     <label for="name">naam: </label><input placeholder="naam" name="naam" type="text"><br>
