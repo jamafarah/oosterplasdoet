@@ -16,7 +16,7 @@
 
 	<!-- Banner bovenaan het scherm -->
 	<div class="banner row-6 vague-green-background" style="background-image: url(http://www.oosterplasdoet.nl/wp-content/uploads/2016/03/cropped-IMG_7544-1.jpg);">
-		 <img src="//www.oosterplasdoet.nl/wp-content/uploads/2016/11/Schermafbeelding-2016-11-02-om-22.13.56-e1478121477474.png" alt="" class="centered-logo">
+		 <img src="{{ asset('/img/overons/oosterplas_transparant.png') }}" alt="" class="centered-logo">
 	</div>
 
 	<!-- Container voor de rest van de inhoud -->
@@ -29,10 +29,6 @@
 
 		<!-- Grid met afbeeldingen van alle bedrijven -->
 		<div class="row sponsor-container green-background" style="background-color: #A9C80C;">
-			<div class="col-md-4 orange-background pull-right">
-				<h2 class="title" id="1">Naam van instantie</h2>
-				<p class="info" id="2">Hier komt een beschrijving van de sponsor te staan. Hier vind je bijvoobeeld waarom het bedrijf of club een sponsor is en wat er is begedragen</p>
-			</div>
 			<div class="col-md-8 sponsor-overview" style="margin-top: 10px;">
 				@if (count($hoofdsponsoren) > 0)
 					<h1>Hoofd Sponsoren</h1>

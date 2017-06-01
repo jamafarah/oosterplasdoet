@@ -39,6 +39,10 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
   display: block;
 }
 
+.centered-logo{
+  height: 150px;
+}
+
 .banner {
   display: flex;
   align-items: center;
@@ -51,10 +55,11 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
   width: calc(100vw - 300px);
   margin-left: 150px;
   padding-bottom: 50px;
-  background-color: white; }
+  /*background-color: white;*/
+}
 
 .raised {
-  margin-top: -60px;
+  margin-top: -90px;
   padding-top: 20px;
 }
 
@@ -107,6 +112,9 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
   background-size: cover; }
   .serviceBlock button, a.more {
     border: none;
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
     color: white;
     font-size: 1em;
     padding: 4px 8px;
@@ -114,7 +122,8 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
     -moz-transition: .2s ease-in-out;
     -ms-transition: .2s ease-in-out;
     -o-transition: .2s ease-in-out;
-    transition: .2s ease-in-out; }
+    transition: .2s ease-in-out;
+  }
     .serviceBlock button:hover, a.more:hover {
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25); }
 .serviceBlock .contentPane {
@@ -127,9 +136,18 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
   position: relative;
 }
 
+.sponsor-overview img {
+  padding: 15px;
+}
+
 
 .highlightRow {
-  margin-top: 50px; }
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+}
 
 .highlightBlock {
   box-sizing: border-box;
