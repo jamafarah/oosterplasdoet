@@ -16,9 +16,9 @@
                         </p>
                         Geplaatst op: {{ Carbon::createFromFormat('Y-m-d H:i:s', $news->created_at)->format('H:i d-m-Y') }}<br />
                         Geupdated op: {{ Carbon::createFromFormat('Y-m-d H:i:s', $news->updated_at)->format('H:i d-m-Y') }}<br /><br />
-                        <a class="button more orange-background" href="{{ route('newsShow', $news->id) }}">Lees meer</a>
                     </div>
                 </div>
+                <a class="button more orange-background" href="{{ route('newsShow', $news->id) }}">Lees meer</a>
             </div>
         </div>
     </div>
