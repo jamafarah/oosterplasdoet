@@ -72,7 +72,7 @@
 
         <div class="form-group">
             {!! Form::label('beschrijving', 'beschrijving') !!}
-            {!! Form::textarea('beschrijving', '') !!}
+            {!! Form::textarea('beschrijving', '', ['required'=>'required', 'class'=>'form-control' ]) !!}
         </div>
 
 
@@ -86,7 +86,6 @@
 
 
     </div>
-    @include(('../editor'))
 
     <!-- font awesoem -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
