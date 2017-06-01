@@ -6,6 +6,7 @@ use App\News;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Session;
 use Mail;
+use App\WebsiteText;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
 
@@ -22,6 +23,7 @@ class IndexController extends Controller
         } catch (ModelNotFoundException $e) {
             abort(404);
         }
-        return view('index')->with(compact('news'));
+        $content = WebsiteText::where('textarea_name', 'homepagina')->firstOrFail();
+        return view('index')->with(compact('news','content'));
     }
 }

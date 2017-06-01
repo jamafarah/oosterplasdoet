@@ -6,16 +6,7 @@
         <img src="//www.oosterplasdoet.nl/wp-content/uploads/2016/11/Schermafbeelding-2016-11-02-om-22.13.56-e1478121477474.png" alt="" class="centered-logo">
     </div>
 <div class="container raised">
-    <div class="slogan">
-        <h1 class="green">We halen samen meer uit onze wijk!</h1>
-        <p>
-            Stichting OosterplasDOET! is er als wijkonderneming in de wijken â€˜s-Hertogenbosch Oost en Hintham om mensen
-            en
-            organisaties te verbinden. Dit doen we door het coÃ¶rdineren en stimuleren van activiteiten op het gebied van
-            onderwijs, arbeid, sport, cultuur en zorg & welzijn. Met als speerpunten studie begeleiding en
-            gunbanen.
-        </p>
-    </div>
+        {!! $content->content !!}
     <div class="services">
         <div class="serviceBlock col-xs-12 col-md-6">
             <div class="image" style="background-image: url(http://wvua23.com/wp-content/uploads/2015/04/school-stock.jpg)">

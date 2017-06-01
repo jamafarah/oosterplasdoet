@@ -41,7 +41,7 @@ Route::get('signup/{id}', 'SignUpController@getSignUp')->name("signup");
 Route::post('signup/{id}', 'SignUpController@postSignUp');
 
 
-Route::get('gunbanen', function () {
+Route::get('gunbanen', ['uses' => 'GunbaanController@index'], function () {
     return view('gunbanen');
 });
 
@@ -69,10 +69,57 @@ Route::get('about', function () {
     return view('underconstruction');
 });
 
-Route::get('partners', function () {
-    return view('partners');
-});
+Route::get('partners', 'PartnerController@getIndex');
 
-Route::get('about', function () {
-    return view('overons');
-});
+
+Route::get('about', 'OverOnsController@getIndex');
+
+Auth::routes();
+
+Route::get('/beheerder', 'AdminController@index')->name('beheerder');
+
+
+Route::get('/logout', 'AdminController@logout')->name('beheerder');
+
+// edit routes
+
+Route::get('/editnews', 'EditController@newsindex')->name('beheerder');
+
+Route::get('/addnews', 'EditController@addnews')->name('beheerder');
+
+Route::get('changenews/{id}', 'EditController@changenews')->name('changenews');
+Route::get('deletenews/{id}', 'EditController@deletenews')->name('deletenews');
+
+Route::post('updatenews',
+    ['as' => 'updatenews', 'uses' => 'EditController@updatenews']);
+
+Route::post('/addnews',
+    ['as' => 'createnews', 'uses' => 'EditController@createnews']);
+
+
+Route::get('/editevent', 'EditController@eventindex')->name('beheerder');
+
+Route::get('/addevent', 'EditController@addevent')->name('beheerder');
+
+Route::get('signupsevent/{id}', 'EditController@signupsevent')->name('signupsevent');
+Route::get('changeevent/{id}', 'EditController@changeevent')->name('changeevent');
+Route::get('deleteevent/{id}', 'EditController@deleteevent')->name('deleteevent');
+
+Route::post('updateevent',
+    ['as' => 'updateevent', 'uses' => 'EditController@updateevent']);
+
+Route::post('/addevent',
+    ['as' => 'createevent', 'uses' => 'EditController@createevent']);
+
+Route::get('/editsponsor', 'EditController@editsponsor')->name('beheerder');
+
+
+
+Route::get('/editpages', 'PageEditController@index')->name('beheerder');
+
+Route::get('/editpage/{page}', ['uses' =>'PageEditController@editpage']);
+
+Route::post('/updatepagecontent',
+    ['as' => 'updatepagecontent', 'uses' => 'PageEditController@updatepagecontent']);
+
+
