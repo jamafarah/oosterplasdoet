@@ -16,8 +16,9 @@ class CreateSponsorPartnerTable extends Migration
         Schema::create('sponsorpartner', function(Blueprint $table) {
             $table->increments('id');
             $table->string('naam', 200);
-            $table->string('type', 30);
             $table->string('url', 255);
+            $table->string('type', 30);
+            $table->string('beschrijving', 2000);
             $table->string('img', 255);
             $table->timestamps();
             $table->softDeletes();

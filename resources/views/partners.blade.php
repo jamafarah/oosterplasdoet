@@ -74,7 +74,7 @@
 
 
 		</div>
-				
+
 				</div>
 				
 			<!-- Text van elke organisatie -->

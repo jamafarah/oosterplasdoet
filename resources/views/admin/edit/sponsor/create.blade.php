@@ -56,6 +56,7 @@
 
         <div class="form-group">
             {!! Form::label('url', 'url') !!}
+            {!! Form::text('url', 'http://', ['required'=>'required', 'class'=>'form-control' ]) !!}
         </div>
 
         <div class="form-group">
