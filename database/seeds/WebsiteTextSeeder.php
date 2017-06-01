@@ -58,15 +58,15 @@ class WebsiteTextSeeder extends Seeder
 
                     <h2 class="orange">Tarieven </h2>
                     <p>
-                        Bij een inkomen lager dan 18.500,- betaal je € 20,- per maand
-                        Bij een inkomen tussen de 18.500,- en 37.000,- betaal je € 80,-  per maand
-                        Bij een inkomen hoger dan 37.000,- betaal je € 160,- per maand
+                        Bij een inkomen lager dan 18.500,- betaal je € 20,- per maand<br/>
+                        Bij een inkomen tussen de 18.500,- en 37.000,- betaal je € 80,-  per maand<br/>
+                        Bij een inkomen hoger dan 37.000,- betaal je € 160,- per maand<br/>
                     </p>
 
 
                 <h2 class="orange">overige informatie</h2>
                 <p>
-                   Voorwaarden OosterplasDOET! en Studiejunk volgen bij de aanmelding.
+                   Voorwaarden OosterplasDOET! en Studiejunk volgen bij de aanmelding.<br/>
                     Voor meer informatie stuurt u een email naar oosterplasdoet@gmail.com.
                 </p>'
         ));
