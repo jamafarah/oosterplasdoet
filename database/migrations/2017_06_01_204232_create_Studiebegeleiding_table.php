@@ -1,10 +1,11 @@
+
 <?php
 
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class GunbanenInschrijvingenTable extends Migration
+class CreateStudiebegeleidingTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +14,7 @@ class GunbanenInschrijvingenTable extends Migration
      */
     public function up()
     {
-        Schema::create('gunbanen_inschrijvingen', function(Blueprint $table) {
+        Schema::create('studiebegeleiding', function(Blueprint $table) {
             $table->increments('id');
             $table->string('Naam', 255);
             $table->string('Email',254);
@@ -21,7 +22,6 @@ class GunbanenInschrijvingenTable extends Migration
             $table->date('Geboortedatum');
             $table->string('Adres',254);
             $table->string('Studie',254)->nullable();
-            $table->string('cv')->nullable();
             $table->dateTime('updated_at');
             $table->dateTime('created_at');
         });
@@ -34,6 +34,6 @@ class GunbanenInschrijvingenTable extends Migration
      */
     public function down()
     {
-        Schema::drop('gunbanen_inschrijvingen');
+        Schema::drop('studiebegeleiding');
     }
 }

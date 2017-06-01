@@ -55,6 +55,15 @@ Route::get('gunbanen/signup', function () {
     return view('gunbanenSignUp');
 });
 
+Route::get('studiebegeleiding/signup',
+    ['as' => 'studiebegeleiding_c', 'uses' => 'StudiebegeleidingController@create']);
+Route::post('studiebegeleiding/signup',
+    ['as' => 'studiebegeleiding_signup', 'uses' => 'StudiebegeleidingController@signup']);
+
+Route::get('studiebegeleiding/signup', function () {
+    return view('studiesignup');
+});
+
 Route::get('nieuws', 'NewsController@index')->name('news');
 Route::get('nieuws/{id}', 'NewsController@show')->name('newsShow');
 
@@ -68,7 +77,7 @@ Route::get('bewoners', function () {
 Route::get('about', function () {
     return view('underconstruction');
 });
-
+Route::get('studiebegeleiding', 'StudiebegeleidingController@Index');
 Route::get('partners', 'PartnerController@getIndex');
 
 
