@@ -29,7 +29,12 @@
 
 		<!-- Grid met afbeeldingen van alle bedrijven -->
 		<div class="row sponsor-container">
+			<div class="col-md-4 orange-background pull-right">
+				<h2 class="title" id="1">Naam van instantie</h2>
+				<p class="info" id="2">Hier komt een beschrijving van de sponsor te staan. Hier vind je bijvoobeeld waarom het bedrijf of club een sponsor is en wat er is begedragen</p>
+			</div>
 			<div class="col-md-8 sponsor-overview" style="margin-top: 10px;">
+
 				@if (count($hoofdsponsoren) > 0)
 					<h1>Hoofd Sponsoren</h1>
 					@foreach ($hoofdsponsoren AS $sponsor)
