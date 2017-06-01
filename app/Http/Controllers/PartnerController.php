@@ -22,10 +22,12 @@ class PartnerController extends Controller
             abort(404);
         }
         try {
-            $sponsors = Sponsor::all();
+            $hoofdsponsoren = Sponsor::where('type', 'Hoofd Sponsor')->get();
+            $normalesponsoren = Sponsor::where('type', 'Normale Sponsor')->get();
+            $partners = Sponsor::where('type', 'Partner')->get();
         } catch (ModelNotFoundException $e) {
             abort(404);
         }
-        return view('partners')->with(compact('content','sponsors'));
+        return view('partners')->with(compact('content','hoofdsponsoren','normalesponsoren','partners'));
     }
 }

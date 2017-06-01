@@ -54,6 +54,12 @@
         </div>
 
 
+
+        <div class="form-group">
+            {!! Form::label('url', 'url') !!}
+            {!! Form::text('url', $sponsor->url, ['required'=>'required', 'class'=>'form-control' ]) !!}
+        </div>
+
         <div class="form-group">
             {!! Form::label('type', 'type') !!}
             {!! Form::select('type', array('Hoofd Sponsor' => 'Hoofd Sponsor', 'Normale Sponsor' => 'Normale Sponsor', 'Partner' => 'Partner'), $sponsor->type, ['required'=>'required', 'class'=>'form-control' ]) !!}

@@ -14,6 +14,6 @@ class Sponsor extends Model
     use SoftDeletes;
 
     protected $dates = ['deleted_at'];
-    protected $fillable = array('naam', 'type', 'beschrijving','img');
+    protected $fillable = array('naam', 'type', 'beschrijving','img','url');
 
 }

@@ -26,55 +26,59 @@
 		<div class="row"  style="width: calc(100vw - 300px); background-color: white; min-height: 184px; margin-top: -60px; padding-top: 20px; text-align: center;">
 				{!! $content->content !!}
 		</div>
-		
+
 		<!-- Grid met afbeeldingen van alle bedrijven -->
 		<div class="row sponsor-container green-background" style="background-color: #A9C80C;">
-			<div class="col-md-8 sponsor-overview" style="margin-top: 10px;">
-					<div class="row " style="margin-bottom: 10px;">
-
-						<a target="_blank" href="http://debiechten.nl/"><img alt="de biechten" onmouseover='showText("Sociaal Cultureel Centrum de Biechten", "De Biechten faciliteert en denkt mee met allerlei activiteiten en het KEFO in het bijzonder");' src="{{asset('img/sponsoren/logo-de-biechten.png')}}" class="col-md-2" ></a>
-						<a target="_blank" href="http://jc-de-poort.nl/"><img alt="de poort" onmouseover='showText("Jongerencentrum De Poort", "leveren materialen zoals podium en geluid voor KEFO. Ze werken mee aan de organisatie van de studie begeleiding");' src="{{asset('img/sponsoren/logo-de-poort.png')}}" class="col-md-2" ></a>
-						<a target="_blank" href="http://www.denboschoost.nl"><img alt="den bosch oost" onmouseover='showText("Medisch centrum Oost", "Het medisch centrum Oost is betrokken .....");' src="{{asset('img/sponsoren/logo-denboschoost.jpg')}}" class="col-md-2" ></a>
-						<a target="_blank" href="http://www.dierentehuisdenbosch.nl"><img alt="dierentehuis oosterplas" onmouseover='showText("Dierentehuis Oosterplas", "Dierentehuis Den Bosch werkt met name samen in de co-creatie rondom het KEFO");' src="{{asset('img/sponsoren/logo-dierentehuis.png')}}" class="col-md-2" ></a>
-						<a target="_blank" href="http://www.divers.nl/"><img alt="stichting divers" onmouseover='showText("Stichting Divers", "Zij werken actief mee met de studie begeleiding");' src="{{asset('img/sponsoren/logo-drivers.png')}}" class="col-md-2" ></a>
-						<a target="_blank" href="http://www.volkstuinendenbosch.nl"><img alt="volkstuinen oosterplas" onmouseover='showText("Volkstuinen Oosterplas", "Volkstuinen Oosterplas is onder andere betrokken in de co-creatie rondom het KEFO");' src="{{asset('img/sponsoren/logo-ederatie.JPG')}}" class="col-md-2" ></a>
-						
-					</div>
-					<div class="row" style="margin-bottom: 10px;">
-					
-						<a target="_blank" href="http://www.wladimirov.nl"><img alt="Wladimirov fitness en welness" onmouseover='showText("Wladimirov fitness en welness", "Wladimirov fitness en welness is onder andere betrokken in de co-creatie rondom het KEFO");' src="{{asset('img/sponsoren/logo-fitness.png')}}" class="col-md-2" ></a>
-						<a target="_blank" href="https://www.s-hertogenbosch.nl/"><img alt="Gemeente" onmouseover='showText("Gemeente s-Hertogenbosch", "De gemeente is betrokken bij diverse activiteiten en ondersteund de Stichting wat bevestigd werd door de verkiezingen van de kamer van doen voor buurtinitiatieven");' src="{{asset('img/sponsoren/logo-gemeente.png')}}" class="col-md-2" ></a>
-						<a target="_blank" href="http://www.hambaken-gym.nl/"><img alt="Vereniging Hambaken Gym" onmouseover='showText("Vereniging Hambaken Gym ", "Ze werken mee aan de studie begeleiding en verzorgen kickboxen voor vrouwen in Hintham");' src="{{asset('img/sponsoren/logo-hambaken-gym.jpg')}}" class="col-md-2" ></a>
-						<a target="_blank" href="http://www.hcdenbosch.nl"><img alt="Hockeyclub" onmouseover='showText("Hockeyclub s-Hertogenbosch", "De hockeyclub is onder andere betrokken in de co-creatie rondom het KEFO. Zij stellen ruimte ter beschikking voor de organisatie. Daarnaast zijn zij partner in sportactiviteiten rondom de Oosterplas");' src="{{asset('img/sponsoren/logo-hockeyclub.png')}}" class="col-md-2" ></a>
-						<a target="_blank" href="https://www.kw1c.nl/"><img alt="KW1C" onmouseover='showText("KW1C (Koning Willem 1 College)", "Zij zorgen voor stagiaires en helpen mee bij het opzetten van het Leerwerkbedrijf");' src="{{asset('img/sponsoren/logo-koning-willem1.png')}}" class="col-md-2" ></a>
-						<a target="_blank" href="http://www.modelbotenclub-titanic.nl"><img alt="modelboten club" onmouseover='showText("Titanic, modelboten club", "Titanic is onder andere betrokken in de co-creatie rondom het KEFO en stelt hun clubhuis ter beschikking als start- en eindpunt voor de activiteit: wandelen in de natuur");' src="{{asset('img/sponsoren/logo-modelbotenclub.jpg')}}" class="col-md-2" ></a>
-					
-					</div>
-					<div class="row" style="margin-bottom: 10px;">
-					
-						<a target="_blank" href="http://www.stichting-oosterhoeve.nl"><img alt="Kind- en zorgboerderij Oosterhoeve" onmouseover='showText("Kind- en zorgboerderij Oosterhoeve", "Kind- en zorgboerderij Oosterhoeve is onder andere betrokken in de co-creatie rondom het KEFO");' src="{{asset('img/sponsoren/logo-oosterhoeve4.jpg')}}" class="col-md-2" ></a>
-						<a target="_blank" href="http://www.s-port.nl"><img alt="S-Port" onmouseover='showText("S-Port", "S-Port is hoofdorganisator van de Baggerloop tijdens het Kom Erbij Festival Oosterplas");' src="{{asset('img/sponsoren/logo-s-port.png')}}" class="col-md-2" ></a>
-						<a target="_blank" href="http://www.samenbeter.nl/home"><img alt="Gezondheidscentrum" onmouseover='showText("Gezondheidscentrum Samen Beter", "Participeren in sportimpuls aanvraag");' src="{{asset('img/sponsoren/logo-samen-beter.png')}}" class="col-md-2" ></a>
-						<a target="_blank" href="http://www.toonlef.nl"><img alt="Toon Lef!" onmouseover='showText("Toon Lef!", "Mieke van der Sanden is het gezicht achter Toon Lef");' src="{{asset('img/sponsoren/logo-toonlef.png')}}" class="col-md-2" ></a>
-						<a target="_blank" href="http://www.vanneynsel.nl/"><img alt="Park" onmouseover='showText("Park Eemwijk", "Deze ouderen zorgorganisatie (van Neynsel) is regelmatig betrokken bij Oosterplas Doet");' src="{{asset('img/sponsoren/logo-van-neysel.png')}}" class="col-md-2" ></a>
-						<a target="_blank" href="http://www.vivent.nl/zorgcentra/vivent-hof-van-hintham"><img alt="Verzorgingstehuis" onmouseover='showText("Verzorgingstehuis Hof van Hintham (Vivent)", "Bieden plek voor een Gunbaner en werken mee met Wandel je fit");' src="{{asset('img/sponsoren/logo-vivent.png')}}" class="col-md-2" ></a>
-	
-					</div>
-					<div class="row">
-					
-						<a target="_blank" href="https://www.weenerxl.nl/home/"><img alt="WeenerXL" onmouseover='showText("WeenerXL", "Zij werken mee aan het project gunbanen");' src="{{asset('img/sponsoren/logo-weenerxl.png')}}" class="col-md-2" ></a>
-						<a target="_blank" href="http://www.wijkraadhintham.nl/"><img alt="Wijkraad" onmouseover='showText("Wijkraad Hintham", "Ze helpen actief mee met promotie en ondersteunen onze initiatieven op verschillende manieren");' src="{{asset('img/sponsoren/logo-wijkraad.png')}}" class="col-md-2" ></a>
-						<a target="_blank" href="http://www.zv-oosterplas.nl"><img alt="Zeilvereniging" onmouseover='showText("Zeilvereniging Oosterplas", "De zeilvereniging is actief betrokken bij Oosterplas Doet door onder andere zitting te hebben in het bestuur van Oosterplas Doet en actief betrokken te zijn in de co-creatie rondom het KEFO");' src="{{asset('img/sponsoren/logo-zeilvereniging.jpg')}}" class="col-md-2" ></a>
-						
-						
-					</div>
-				</div>
-				
-			<!-- Text van elke organisatie -->
-			<div class="col-md-4 orange-background">
+			<div class="col-md-4 orange-background pull-right">
 				<h2 class="title" id="1">Naam van instantie</h2>
 				<p class="info" id="2">Hier komt een beschrijving van de sponsor te staan. Hier vind je bijvoobeeld waarom het bedrijf of club een sponsor is en wat er is begedragen</p>
 			</div>
+			<div class="col-md-8 sponsor-overview" style="margin-top: 10px;">
+				@if (count($hoofdsponsoren) > 0)
+					<h1>Hoofd Sponsoren</h1>
+					@foreach ($hoofdsponsoren AS $sponsor)
+						<a target="_blank" href="{!! $sponsor->url !!}"><img alt="{!! $sponsor->naam !!}" onmouseover='showText("{!! $sponsor->naam !!}", "{!! $sponsor->beschrijving !!}");' src="{{asset("img/sponsoren/$sponsor->img")}}" class="col-md-2" ></a>
+
+					@endforeach
+				@else
+					<p>Geen Hoofd Sponsoren gevonden</p>
+				@endif
+
+			</div>
+
+			<div class="col-md-8 sponsor-overview" style="margin-top: 10px;">
+				@if (count($normalesponsoren) > 0)
+					<h2>Normale Sponsoren</h2>
+					@foreach ($normalesponsoren AS $sponsor)
+						<a target="_blank" href="{!! $sponsor->url !!}"><img alt="{!! $sponsor->naam !!}" onmouseover='showText("{!! $sponsor->naam !!}", "{!! $sponsor->beschrijving !!}");' src="{{asset("img/sponsoren/$sponsor->img")}}" class="col-md-2" ></a>
+					@endforeach
+				@else
+					<p>Geen Normale Sponsoren gevonden</p>
+				@endif
+
+			</div>
+		<br>
+
+				<div class="col-md-8 sponsor-overview" style="margin-top: 10px;">
+					@if (count($partners) > 0)
+						<h2>Partners</h2>
+						@foreach ($partners AS $sponsor)
+							<a target="_blank" href="{!! $sponsor->url !!}"><img alt="{!! $sponsor->naam !!}" onmouseover='showText("{!! $sponsor->naam !!}", "{!! $sponsor->beschrijving !!}");' src="{{asset("img/sponsoren/$sponsor->img")}}" class="col-md-2" ></a>
+						@endforeach
+					@else
+						<p>Geen Partners gevonden</p>
+					@endif
+
+				</div>
+		<div>
+
+
+		</div>
+				
+				</div>
+				
+			<!-- Text van elke organisatie -->
+
 		</div>
 	</div>
 

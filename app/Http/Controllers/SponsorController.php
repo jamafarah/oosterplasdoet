@@ -83,7 +83,7 @@ class SponsorController extends Controller
         ]);
         $image = $request->file('img');
         $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
-        $destinationPath = public_path('/img/sponsor');
+        $destinationPath = public_path('/img/sponsoren');
         $image->move($destinationPath, $input['imagename']);
 
         $createsponsor = new Sponsor();
@@ -120,7 +120,7 @@ class SponsorController extends Controller
         {
 
             $input['imagename'] = time().'.'.$image->getClientOriginalExtension();
-            $destinationPath = public_path('/img/sponsor');
+            $destinationPath = public_path('/img/sponsoren');
             $image->move($destinationPath, $input['imagename']);
             $curimg=$input['imagename'];
         }

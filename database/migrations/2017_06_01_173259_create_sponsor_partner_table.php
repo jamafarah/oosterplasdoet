@@ -17,7 +17,7 @@ class CreateSponsorPartnerTable extends Migration
             $table->increments('id');
             $table->string('naam', 200);
             $table->string('type', 30);
-            $table->text('beschrijving', 1000);
+            $table->string('url', 255);
             $table->string('img', 255);
             $table->timestamps();
             $table->softDeletes();

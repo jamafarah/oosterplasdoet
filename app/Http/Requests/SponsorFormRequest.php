@@ -26,6 +26,7 @@ class SponsorFormRequest extends FormRequest
         return [
             'naam' => 'required',
             'type' => 'required',
+            'url' => 'required',
             'beschrijving' => 'required'
         ];
     }
