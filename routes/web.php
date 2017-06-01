@@ -121,7 +121,7 @@ Route::get('/editpages', 'PageEditController@index')->name('beheerder');
 Route::get('/editpage/{page}', ['uses' =>'PageEditController@editpage']);
 
 Route::post('/updatepagecontent',
-    ['as' => 'updatepagecontent', 'uses' => 'PageMedewerkerController@updatepagecontent']);
+    ['as' => 'updatepagecontent', 'uses' => 'PageEditController@updatepagecontent']);
 
 Route::get('/editmedewerker', 'MedewerkerController@index')->name('beheerder');
 
