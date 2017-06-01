@@ -28,7 +28,7 @@
 		</div>
 
 		<!-- Grid met afbeeldingen van alle bedrijven -->
-		<div class="row sponsor-container green-background" style="background-color: #A9C80C;">
+		<div class="row sponsor-container">
 			<div class="col-md-8 sponsor-overview" style="margin-top: 10px;">
 				@if (count($hoofdsponsoren) > 0)
 					<h1>Hoofd Sponsoren</h1>
