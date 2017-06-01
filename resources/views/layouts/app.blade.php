@@ -21,7 +21,7 @@
 
 
 </head>
-<body>
+<body class="green-background">
 @include('layouts.navigation')
         @yield('content')
         @yield('script')
