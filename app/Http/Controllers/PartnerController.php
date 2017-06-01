@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\News;
+use App\Sponsor;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 use App\WebsiteText;
@@ -20,6 +21,11 @@ class PartnerController extends Controller
         } catch (ModelNotFoundException $e) {
             abort(404);
         }
-        return view('partners')->with(compact('content'));
+        try {
+            $sponsors = Sponsor::all();
+        } catch (ModelNotFoundException $e) {
+            abort(404);
+        }
+        return view('partners')->with(compact('content','sponsors'));
     }
 }
