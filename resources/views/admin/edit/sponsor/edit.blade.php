@@ -31,64 +31,62 @@
 
 
 
-        <div class="container" >
-            <a class="btn btn-lg orange-background white pull-right" type="submit" style="margin-top: 10px; border-radius: 0;" href="../editnews"><b>Terug</b></a>
-            <h1 class="white">Inschrijven</h1>
+        <a class="btn btn-lg orange-background white pull-right" type="submit" style="margin-top: 10px; border-radius: 0;" href="../editsponsor"><b>Terug</b></a>
+        <h1 class="white">Inschrijven</h1>
 
 
 
-            <ul>
-                @foreach($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
+        <ul>
+            @foreach($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
 
-            {!! Form::open(array('route' => 'updatenews', 'class' => 'form')) !!}
-
-
-            {!! Form::hidden('id', $news->id, ['readonly']) !!}
+        {!! Form::open(array('route' => 'updatesponsor', 'class' => 'form', 'enctype'=>"multipart/form-data")) !!}
 
 
-            <div class="form-group">
-                {!! Form::label('titel', 'Titel') !!}
-                {!! Form::text('title', $news->title, ['required'=>'required', 'class'=>'form-control' ]) !!}
-            </div>
+        {!! Form::hidden('id', $sponsor->id, ['readonly']) !!}
 
 
-            <div class="form-group">
-                {!! Form::label('slug', 'slug') !!}
-                {!! Form::text('slug', $news->slug, ['required'=>'required', 'class'=>'form-control']) !!}
-            </div>
-
-
-            <div class="form-group">
-                {!! Form::label('img', 'img') !!}
-                {!! Form::text('img', $news->img, ['required'=>'required', 'class'=>'form-control']) !!}
-            </div>
-
-            <div class="form-group">
-                {!! Form::label('intro', 'intro') !!}
-                {!! Form::text('intro', $news->intro, ['required'=>'required', 'class'=>'form-control']) !!}
-            </div>
-
-            <div class="form-group">
-                {!! Form::label('content', 'content') !!}
-                {!! Form::textarea('content', $news->content, ['required'=>'required', 'class'=>'form-control']) !!}
-            </div>
-
-
-
-
-            <br/> <br/> <br/>
-
-            {!! Form::submit('Aanpassen', ['class' => 'btn btn-lg vague-orange-background', 'style' => 'border-radius: 0; color: #fff']) !!}
-
-            {!! Form::close() !!}
-
+        <div class="form-group">
+            {!! Form::label('naam', 'naam') !!}
+            {!! Form::text('naam', $sponsor->naam, ['required'=>'required', 'class'=>'form-control' ]) !!}
         </div>
 
-    </div>
 
+        <div class="form-group">
+            {!! Form::label('type', 'type') !!}
+            {!! Form::text('type', $sponsor->type, ['required'=>'required', 'class'=>'form-control']) !!}
+        </div>
+
+
+
+
+        <div class="form-group">
+            {!! Form::label('img', 'img') !!}
+            {!! Form::file('img', '',array('class' => 'image')) !!}
+        </div>
+
+
+
+
+        <div class="form-group">
+            {!! Form::label('beschrijving', 'beschrijving') !!}
+            {!! Form::textarea('beschrijving', $sponsor->beschrijving, ['required'=>'required', 'class'=>'form-control','name'=>'beschrijving']) !!}
+        </div>
+
+
+
+
+        <br/> <br/> <br/>
+
+        {!! Form::submit('Aanpassen', ['class' => 'btn btn-lg vague-orange-background', 'style' => 'border-radius: 0; color: #fff']) !!}
+
+        {!! Form::close() !!}
+
+
+    </div>
+    @include(('../editor'))
 
     <!-- font awesoem -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">

@@ -112,7 +112,6 @@ Route::post('updateevent',
 Route::post('/addevent',
     ['as' => 'createevent', 'uses' => 'EditController@createevent']);
 
-Route::get('/editsponsor', 'EditController@editsponsor')->name('beheerder');
 
 
 
@@ -135,4 +134,18 @@ Route::post('updatemedewerker',
 
 Route::post('/addmedewerker',
     ['as' => 'createmedewerker', 'uses' => 'MedewerkerController@createmedewerker']);
+
+Route::get('/editsponsor', 'SponsorController@index')->name('beheerder');
+
+Route::get('/addsponsor', 'SponsorController@addsponsor')->name('addsponsor');
+
+Route::get('changesponsor/{id}', 'SponsorController@changesponsor')->name('changesponsor');
+Route::get('deletesponsor/{id}', 'SponsorController@deletesponsor')->name('deletesponsor');
+
+Route::post('updatesponsor',
+    ['as' => 'updatesponsor', 'uses' => 'SponsorController@updatesponsor']);
+
+Route::post('/addsponsor',
+    ['as' => 'createsponsor', 'uses' => 'SponsorController@createsponsor']);
+
 
