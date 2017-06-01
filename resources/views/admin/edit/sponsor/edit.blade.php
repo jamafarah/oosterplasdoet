@@ -56,7 +56,7 @@
 
         <div class="form-group">
             {!! Form::label('type', 'type') !!}
-            {!! Form::text('type', $sponsor->type, ['required'=>'required', 'class'=>'form-control']) !!}
+            {!! Form::select('type', array('Hoofd Sponsor' => 'Hoofd Sponsor', 'Normale Sponsor' => 'Normale Sponsor', 'Partner' => 'Partner'), $sponsor->type, ['required'=>'required', 'class'=>'form-control' ]) !!}
         </div>
 
 
