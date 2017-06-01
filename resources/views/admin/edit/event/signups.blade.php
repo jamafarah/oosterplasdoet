@@ -59,13 +59,13 @@
                 <td>{!! $signup->last_name !!} </td>
                 <td>{!! $signup->birthdate !!} </td>
                 <td>{!! $signup->emailaddress !!} </td>
-                @foreach ($signup->appendices()->get() AS $signup)
+                @foreach ($signup->appendices()->get() AS $signupAppendix)
                     <tr>
-                        <td>{!! $signup->first_name !!} </td>
-                        <td>{!! $signup->last_name !!} </td>
-                        <td>{!! $signup->birthdate !!} </td>
-                        <td>{!! $signup->emailaddress !!} </td>
-                        <td>{!! $signup->first_name !!} </td>
+                        <td>{!! $signupAppendix->first_name !!} </td>
+                        <td>{!! $signupAppendix->last_name !!} </td>
+                        <td>{!! $signupAppendix->birthdate !!} </td>
+                        <td>{!! $signupAppendix->emailaddress !!} </td>
+                        <td>{!! $signup->getFullName() !!} </td>
                     </tr>
                     @endforeach
             </tr>

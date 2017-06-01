@@ -16,7 +16,7 @@ class SignupAppendix extends Model {
 
     protected $fillable = ['first_name', 'last_name', 'birthdate'];
 
-	public function signups()
+	public function signup()
 	{
 		return $this->belongsTo(Signup::class);
 	}
