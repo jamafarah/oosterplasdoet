@@ -29,21 +29,21 @@ class PartnerSeeder extends Seeder {
             'url' => 'http://www.denboschoost.nl',
             'type' => 'Hoofd Sponsor',
             'beschrijving' => 'Het medisch centrum Oost is betrokken',
-            'img' => 'logo-dierentehuis.png'
+            'img' => 'logo-denboschoost.jpg'
         ));
         Sponsor::create(array(
             'naam' => 'dierentehuis oosterplas',
             'url' => 'http://www.dierentehuisdenbosch.nl',
             'type' => 'Partner',
             'beschrijving' => 'Zij werken actief mee met de studie begeleiding',
-            'img' => 'logo-drivers.png'
+            'img' => 'logo-dierentehuis.png'
         ));
         Sponsor::create(array(
             'naam' => 'stichting divers',
             'url' => 'http://www.divers.nl/',
             'type' => 'Normale Sponsor',
             'beschrijving' => 'Volkstuinen Oosterplas is onder andere betrokken in de co-creatie rondom het KEFO',
-            'img' => 'logo-ederatie.JPG'
+            'img' => 'logo-drivers.png'
         ));
 
 
