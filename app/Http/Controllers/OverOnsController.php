@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\News;
+use App\Medewerker;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Http\Request;
 use App\WebsiteText;
+
 
 class OverOnsController extends Controller
 {
@@ -20,6 +21,11 @@ class OverOnsController extends Controller
         } catch (ModelNotFoundException $e) {
             abort(404);
         }
-        return view('overons')->with(compact('content'));
+        try {
+            $medewerkers = Medewerker::all();
+        } catch (ModelNotFoundException $e) {
+            abort(404);
+        }
+        return view('overons')->with(compact('content', 'medewerkers'));
     }
 }
