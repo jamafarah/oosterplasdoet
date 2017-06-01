@@ -97,6 +97,7 @@ Route::post('/addnews',
     ['as' => 'createnews', 'uses' => 'EditController@createnews']);
 
 
+
 Route::get('/editevent', 'EditController@eventindex')->name('beheerder');
 
 Route::get('/addevent', 'EditController@addevent')->name('beheerder');
@@ -120,6 +121,18 @@ Route::get('/editpages', 'PageEditController@index')->name('beheerder');
 Route::get('/editpage/{page}', ['uses' =>'PageEditController@editpage']);
 
 Route::post('/updatepagecontent',
-    ['as' => 'updatepagecontent', 'uses' => 'PageEditController@updatepagecontent']);
+    ['as' => 'updatepagecontent', 'uses' => 'PageMedewerkerController@updatepagecontent']);
 
+Route::get('/editmedewerker', 'MedewerkerController@index')->name('beheerder');
+
+Route::get('/addmedewerker', 'MedewerkerController@addmedewerker')->name('beheerder');
+
+Route::get('changemedewerker/{id}', 'MedewerkerController@changemedewerker')->name('changemedewerker');
+Route::get('deletemedewerker/{id}', 'MedewerkerController@deletemedewerker')->name('deletemedewerker');
+
+Route::post('updatemedewerker',
+    ['as' => 'updatemedewerker', 'uses' => 'MedewerkerController@updatemedewerker']);
+
+Route::post('/addmedewerker',
+    ['as' => 'createmedewerker', 'uses' => 'MedewerkerController@createmedewerker']);
 

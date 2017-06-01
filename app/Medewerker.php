@@ -14,6 +14,6 @@ class Medewerker extends Model
     use SoftDeletes;
 
     protected $dates = ['deleted_at'];
-    protected $fillable = array('naam', 'rol', 'beschrijving');
+    protected $fillable = array('naam', 'rol', 'beschrijving','img');
 
 }
