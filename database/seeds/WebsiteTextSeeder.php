@@ -46,32 +46,28 @@ class WebsiteTextSeeder extends Seeder
     ));
         WebsiteText::create(array(
             'textarea_name' => 'studiebegeleiding',
-            'content' => '<h1 class="orange">Studie begeleiding</h1>
+            'content' => '<h1 class="orange">Studie Begelieding</h1>
             <p>
-                Gunbanen zijn tijdelijke opstapbanen voor jongeren in een uitkeringssituatie. Iedereen tussen de 18 en 27 jaar, thuiswonend of alleenstaand met of zonder kinderen, kan zich hiervoor aanmelden. We hebben diverse werkplaatsen waar je ervaring op kunt doen, waar je je CV mee in beweging kunt houden en mogelijk kan leiden tot een vaste baan bij hen of via hun netwerk.
-                Ben jij, of ken je iemand die in een dergelijke situatie zit neem dan contact met ons op. We helpen je graag verder.
+                De begeleiding helpt je om je studie goed te kunnen volgen, je leert hoe je het beste kunt leren en je krijgt hiervoor coaching om zelfstandig aan de slag te kunnen. Je leert plannen en je krijgt begeleiding om je brugklas jaar goed aan te pakken. Dit alles vindt plaats bij de Biechten en er is tussentijds ook ruimte om even lekker te ontspannen of juist even te bewegen om daarna met hernieuwd concentratie weer verder te gaan.
             </p>
-                    <h2 class="orange">Doel</h2>
+                    <h2 class="orange">Tijden</h2>
                     <p>
-                        Werkloze jongeren aan de slag in een reguliere baan of terug naar school.
+                        elke dinsdag en donderdag professionele begeleiding van Studiejunk van 15.00-18.00
                     </p>
 
 
-                    <h2 class="orange">Middelen</h2>
+                    <h2 class="orange">Tarieven </h2>
                     <p>
-                        (maatschappelijk) participeren via het verenigingsleven/ZZP-ers in de stad in combinatie met coaching / ‘ondersteuning en gunning’ vanuit het verenigingsleven in de stad
+                        Bij een inkomen lager dan 18.500,- betaal je € 20,- per maand
+                        Bij een inkomen tussen de 18.500,- en 37.000,- betaal je € 80,-  per maand
+                        Bij een inkomen hoger dan 37.000,- betaal je € 160,- per maand
                     </p>
 
 
-                <h2 class="orange">uitgangspunten</h2>
+                <h2 class="orange">overige informatie</h2>
                 <p>
-                    – Verenigingen in Den Bosch Oost adopteren werkloze jongere<p/>
-                    – Jongere ‘wil wel maar kan niet’, (weet de weg niet, heeft het netwerk niet, scene-wisseling, ondersteunende ‘ferme hand’ van verenigingsbestuurders en -leden)<p/>
-                    – Jongere doet zinvolle activiteiten binnen de vereniging / stichting (maatwerk, niet teveel “but’s and if’s” inregelen, structuur/verantwoordelijkheid/vertrouwen bieden)<p/>
-                    – Inwoners aan zet, professionals stappen opzij en leveren ondersteuning op vraag van de inwoners of de jongere zelf<p/>
-                    – Verenigingen zetten zich actief in voor hun jongeren<p/>
-                    – Durft te innoveren en leren; lukt het wel dan een echte win-win-win-situatie, valt het tegen dan hebben we het in ieder geval op een nieuwe andere manier MET ELKAAR geprobeerd<p/>
-
+                   Voorwaarden OosterplasDOET! en Studiejunk volgen bij de aanmelding.
+                    Voor meer informatie stuurt u een email naar oosterplasdoet@gmail.com.
                 </p>'
         ));
         WebsiteText::create(array(
