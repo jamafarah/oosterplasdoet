@@ -32,7 +32,7 @@
         <a class="btn btn-lg orange-background white" type="submit" style="margin-top: 10px; border-radius: 0; top: calc(50vh)" href="/addsponsor"><b><span class="glyphicon glyphicon-plus"> </span>Nieuwe sponsor</b></a>
         <a class="btn btn-lg orange-background white pull-right" type="submit" style="margin-top: 10px; border-radius: 0;" href="../beheerder"><b>Terug</b></a>
         @if (count($sponsors) > 0)
-            <table>
+            <table class="overview">
                 <th>Naam</th>
                 <th>Type</th>
                 <th > <span class="glyphicon glyphicon-pencil"></span>Aanpassen</th>
