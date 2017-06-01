@@ -12,7 +12,7 @@
 
                 <ul class="dropdown-menu">
                     <li><a href="{{ url('/gunbanen') }}">gunbanen</a></li>
-                    <li><a href="{{ url('/underconstruction') }}">huiswerkbegeleiding</a></li>
+                    <li><a href="{{ url('/studiebegeleiding') }}">studiebegeleiding</a></li>
                 </ul>
             </li>
             <li><a href="{{ url('/events') }}">activiteiten</a></li>
