@@ -141,11 +141,12 @@
 			margin-top: 15px;
 		}
 		.tablefooter tr td {
-			color: black;
-			font: "Bebas Neue";
+			color: #fff;
+			font-family: "Bebas Neue";
 		}
 		.tablefooter tr td a {
-			color: black;
+			color: #fff;
+			letter-spacing: 0.5px;
 		}
 		#indexFooter{
 			height: auto;
