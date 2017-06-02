@@ -55,7 +55,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
   width: calc(100vw - 300px);
   margin-left: 150px;
   padding-bottom: 50px;
-  /*background-color: white;*/
+  background-color: #ecfff4;
 }
 
 .overview td, .overview th {
