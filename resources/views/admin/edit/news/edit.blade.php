@@ -64,7 +64,7 @@
 
         <div class="form-group">
             {!! Form::label('img', 'img') !!}
-            {!! Form::file('img', '',array('class' => 'image')) !!}
+            {!! Form::file('img') !!}
         </div>
 
 
