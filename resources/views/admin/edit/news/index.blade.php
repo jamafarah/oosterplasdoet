@@ -32,7 +32,7 @@
         <a class="btn btn-lg orange-background white" type="submit" style="margin-top: 10px; border-radius: 0; top: calc(50vh)" href="/addnews"><b><span class="glyphicon glyphicon-plus"> </span>Nieuw nieuwsbericht</b></a>
         <a class="btn btn-lg orange-background white pull-right" type="submit" style="margin-top: 10px; border-radius: 0;" href="../beheerder"><b>Terug</b></a>
         @if (count($news) > 0)
-            <table>
+            <table class="overview">
                 <th>Titel</th>
                 <th>Intro</th>
                 <th>Aangemaakt op</th>

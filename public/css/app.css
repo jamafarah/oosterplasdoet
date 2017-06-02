@@ -58,6 +58,14 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
   /*background-color: white;*/
 }
 
+.overview td, .overview th {
+  padding-right: 15px;
+}
+
+.overview tr {
+  height: 50px;
+}
+
 .raised {
   margin-top: -90px;
   padding-top: 20px;

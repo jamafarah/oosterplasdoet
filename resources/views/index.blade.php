@@ -77,7 +77,7 @@
         <div class="row highlightRow">
             @if (count($news) > 0)
                 @foreach ($news AS $news)
-                    <div class="col-xs-12 col-md-4 row-6 highlightBlock" style="position: relative; height: 100%">
+                    <div class="col-xs-12 col-md-4 row-6 highlightBlock">
 
                         <div class="row image thumbnail" style="background-image: url({{ asset('/img/nieuws/' . $news->img) }})"></div>
                         <h3 class="orange title">{{ $news->title }}</h3>
