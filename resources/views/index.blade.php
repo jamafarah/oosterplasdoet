@@ -132,7 +132,8 @@
 	<div class="col-xs-12 col-md-12 green-background" id="indexFooter">
         <div class="all green-background">
             <div class="col-md-1"></div>
-            <div class="col-md-3">
+            <br>    
+            <div class="col-md-3" style="border-right : 2px solid white;">
                 <div class="address">
                     <h3>Stichting OosterplasDOET!<br></h3>
                     <div class="infolist">
