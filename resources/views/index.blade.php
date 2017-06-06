@@ -131,24 +131,18 @@
 
 	<div class="col-xs-12 col-md-12 green-background" id="indexFooter">
         <div class="all green-background">
-            <div class="col-md-1"></div>
-            <br>    
-            <div class="col-md-3" style="border-right : 2px solid white;">
+            <div class="col-md-2"></div>
+            <br>
+            <div class="col-md-3" style="border-right : 2px solid white; font-size: 80%;">
                 <div class="address">
-                    <h3>Stichting OosterplasDOET!<br></h3>
-                    <div class="infolist">
-                        <h3><br>Adres:</h3>
-                        <dd class="address">
-                            <p translate="no" itemscope="" itemtype="http://schema.org/PostalAddress">
-                                Vincent van Goghlaan 1 Rosmalen<br>
-                                5246 GA
-                            </p>
-                        </dd>
-                    </div>
+                    <h3>Stichting OosterplasDOET!</h3>
+                    <h3><br>Adres:</h3>
+                    Vincent van Goghlaan 1 Rosmalen<br>
+                    5246 GA
                     <h3>RSIN nummer:</h3> 855080528<br>
                     <h3>KvK nummer:</h3> 63073579<br>
                     <h3>SBI-code:</h3> 88993<br>
-                    <h3><br>Emailadres:</h3>oosterplasdoet@gmail.com<br><br>
+                    <h3>Emailadres:</h3>oosterplasdoet@gmail.com<br><br>
                 </div>
             </div>
             <div class="col-md-2">
