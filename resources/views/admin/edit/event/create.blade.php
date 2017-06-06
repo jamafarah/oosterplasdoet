@@ -50,6 +50,11 @@
                 {!! Form::text('name', '', ['required'=>'required', 'class'=>'form-control']) !!}
             </div>
 
+            <div class="form-group">
+                {!! Form::label('intro', 'intro') !!}
+                {!! Form::text('intro   ', '', ['required'=>'required', 'class'=>'form-control']) !!}
+            </div>
+
 
             <div class="form-group">
                 {!! Form::label('content', 'content') !!}

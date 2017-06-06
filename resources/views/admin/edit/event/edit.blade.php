@@ -53,6 +53,10 @@
                 {!! Form::text('name', $event->name, ['required'=>'required', 'class'=>'form-control' ]) !!}
             </div>
 
+            <div class="form-group">
+                {!! Form::label('intro', 'intro') !!}
+                {!! Form::text('intro', $event->intro, ['required'=>'required', 'class'=>'form-control' ]) !!}
+            </div>
 
             <div class="form-group">
                 {!! Form::label('content', 'content') !!}

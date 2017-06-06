@@ -41,9 +41,9 @@
                 <th > <span class="glyphicon glyphicon-remove-sign"></span>Verwijderen</th>
                 @foreach ($event AS $event)
                     <tr>
-                        <td> {!! $event->name !!} </td>
-                        <td> {!! $event->startDate !!} </td>
-                        <td> {!! $event->endDate !!} </td>
+                        <td> {!! $event->name !!}&nbsp&nbsp&nbsp </td>
+                        <td> {!! $event->startDate !!}&nbsp&nbsp&nbsp</td>
+                        <td> {!! $event->endDate !!}&nbsp&nbsp&nbsp</td>
                         <td><center> <a class="glyphicon glyphicon-user"  href="{{ route('signupsevent', $event->id) }}"> Inschrijvingen</a></center> </td>
                         <td><center> <a class="glyphicon glyphicon-pencil"  href="{{ route('changeevent', $event->id) }}"> Aanpassen</a></center> </td>
                         <td> <center><a class="glyphicon glyphicon-remove-sign"  href="{{ route('deleteevent', $event->id) }}"> Verwijderen</a></center> </td>
@@ -51,7 +51,7 @@
                 @endforeach
             </table>
         @else
-            <p>Geen nieuws gevonden</p>
+            <p>Geen evenementen gevonden</p>
         @endif
 
     </div>

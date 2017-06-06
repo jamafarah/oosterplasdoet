@@ -54,8 +54,10 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 .container {
   width: calc(100vw - 300px);
   margin-left: 150px;
-  padding-bottom: 50px;
-  background-color: #ecfff4;
+  /*padding-bottom: 50px;*/
+  background-color: #acc90f;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .overview td, .overview th {
@@ -100,7 +102,10 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
   color: white; }
 
 .green-background {
-  background-color: #ecfff4; }
+  background-color: #acc90f; }
+
+.light-green-background {
+  background-color: rgba(172, 201, 15, 0.5); }
 
 .vague-green-background {
   background-color: #c8b415; }
@@ -150,7 +155,7 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 
 
 .highlightRow {
-  margin-top: 50px;
+  /*margin-top: 50px;*/
   display: -webkit-box;
   display: -moz-box;
   display: -ms-box;
@@ -381,4 +386,20 @@ i.fa.fa-5x:hover {
 
 .no-padding {
   padding: 0;
+}
+
+#indexFooter {
+  color: white;
+}
+
+.infolist h3{
+  margin: 0px;
+  padding: 0px;
+}
+.address h3{
+  margin: 0px;
+  padding: 0px;
+}
+.home-img{
+  width: 100%;
 }

@@ -7,7 +7,7 @@
 </div>
 <div class="container raised">
     <div class="slogan">
-        <h1 class="vague-green">Actieve activiteiten</h1>
+        <h1 class="orange">Actieve activiteiten</h1>
     </div>
 
     @if (count($events) > 0)

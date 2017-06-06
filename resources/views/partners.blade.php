@@ -1,4 +1,4 @@
-@extends('layouts.app')
+	@extends('layouts.app')
 
 
 @section('content')
@@ -18,15 +18,13 @@
 	<div class="banner row-6 vague-green-background" style="background-image: url(http://www.oosterplasdoet.nl/wp-content/uploads/2016/03/cropped-IMG_7544-1.jpg);">
 		 <img src="{{ asset('/img/overons/oosterplas_transparant.png') }}" alt="" class="centered-logo">
 	</div>
+	<!-- Titel voor de pagina met bijbehorende text -->
+	<div class="container raised">
+		{!! $content->content !!}
+	</div>
 
 	<!-- Container voor de rest van de inhoud -->
-	<div class="container" id="test2">
-
-		<!-- Titel voor de pagina met bijbehorende text -->
-		<div class="row"  style="width: calc(100vw - 300px); background-color: white; min-height: 184px; margin-top: -60px; padding-top: 20px; text-align: center;">
-				{!! $content->content !!}
-		</div>
-
+	<div class="container" style="background-color: white; border-style: solid;border-color: #acc90f;">
 		<!-- Grid met afbeeldingen van alle bedrijven -->
 		<div class="row sponsor-container">
 			<div class="col-md-4 orange-background pull-right">
@@ -49,7 +47,7 @@
 
 			<div class="col-md-8 sponsor-overview" style="margin-top: 10px;">
 				@if (count($normalesponsoren) > 0)
-					<h2>Normale Sponsoren</h2>
+					<h2>Sponsoren</h2>
 					@foreach ($normalesponsoren AS $sponsor)
 						<a target="_blank" href="{!! $sponsor->url !!}"><img alt="{!! $sponsor->naam !!}" onmouseover='showText("{!! $sponsor->naam !!}", "{!! $sponsor->beschrijving !!}");' src="{{asset("img/sponsoren/$sponsor->img")}}" class="col-md-2" ></a>
 					@endforeach

@@ -7,7 +7,7 @@
     </div>
 <div class="container raised">
     <div class="slogan">
-        <h1 class="vague-green">Dit is een dummy pagina</h1>
+        <h1 class="orange">Dit is een dummy pagina</h1>
         <p>
             Deze pagina wordt nog gebouwd
         </p>

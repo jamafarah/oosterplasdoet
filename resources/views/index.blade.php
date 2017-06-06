@@ -15,25 +15,29 @@
             <div class="blurred contentPane">
                 <h3 class="orange">Studie begeleiding</h3>
                 <p>
-                    De begeleiding helpt je om je studie goed te kunnen volgen, je leert hoe je het beste kunt leren en je krijgt hiervoor coaching om zelfstandig aan de slag te kunnen.
+                {!! $studiebegeleiding->content !!}
+                    <!--De begeleiding helpt je om je studie goed te kunnen volgen, je leert hoe je het beste kunt leren en je krijgt hiervoor coaching om zelfstandig aan de slag te kunnen.
                     Je leert plannen en je krijgt begeleiding om je brugklas jaar goed aan te pakken. Dit alles vindt plaats bij de Biechten en er is tussentijds ook ruimte om even lekker
                     te ontspannen of juist even te bewegen om daarna met hernieuwd concentratie weer verder te gaan.
+                    -->
                 </p>
                 <button class="more orange-background">Lees meer</button>
             </div>
         </div>
 
-        <div class="serviceBlock col-xs-12 col-md-6">
+        <div class="serviceBlock col-xs-12 col-md-6 green-background">
             <div class="image" style="background-image: url(http://i.telegraph.co.uk/multimedia/archive/03219/stock-photos-vince_3219813k.jpg)">
 
             </div>
             <div class="blurred contentPane">
                 <h3 class="green">Gunbanen</h3>
                 <p>
-                    â€œHet project 'gunbanen' is een pilot. Verenigingen rondom de Oosterplas willen zich graag inzetten werkloze Bossche jongeren.
+                    {!! $gunbanen->content !!}
+                    <!--â€œHet project 'gunbanen' is een pilot. Verenigingen rondom de Oosterplas willen zich graag inzetten werkloze Bossche jongeren.
                     Het doel is om hen aan een betaalde baan te krijgen. Jongeren zetten zich vrijwillig in bij Ã©Ã©n van de dertien verenigingen in Den Bosch Oost.
                     Met behoud van hun uitkering, en zonder de sollicitatieplicht.
                     In ruil voor het geleverde werk en getoonde motivatie gaat Oosterplas doet! na een half jaar binnen het netwerk van vijfduizend leden op zoek naar een betaalde baan.â€�
+                    -->
                 </p>
                 <button class="more orange-background">Lees meer</button>
             </div>
@@ -41,36 +45,28 @@
 
     </div>
 </div>
-    <div class="banner row-4 orange-background" >
+    <div class="banner row-3 orange-background" >
         <h1 class="white">Higlights/Activiteiten</h1>
     </div>
 <div class="container">
-    <div class="row highlightRow">
-        <div class="col-xs-12 col-md-4 row-6 highlightBlock">
-            <div class="row image thumbnail" style="background-image: url(http://www.oosterplasdoet.nl/wp-content/uploads/2016/03/FullSizeRender.jpg)"></div>
-            <h3 class="orange title">B-Battle</h3>
-            <h3 class="orange date">6/9/2017</h3>
-            <p>Het is alweer voorbij. We kijken terug op 2 mooie dagen baggerloop en B-Battle. Mooi weer, enthousiaste kinderen en Battle teams. We weten het nu al zeker. Volgend jaar zijn we er weer! Zie meer hier
+        <div class="row highlightRow">
+            @if (count($events) > 0)
+                @foreach ($events AS $events)
+                    <div class="col-xs-12 col-md-4 row-6 highlightBlock">
 
-                Winnaar B-Battle 2016: Zeilvereniging Oosterplas. Gefeliciteerd!</p>
+                        <div class="row image thumbnail" style="background-image: url({{ asset('/img/evenementen/Standaard.png') }})"></div>
+                        <h2 class="orange title">{{ $events->name }}</h2>
+                        <h3 class="title">begint op: &nbsp</h3><h3 class="orange date">{{ Carbon::createFromFormat('Y-m-d H:i:s', $events->startDate)->format('H:i d-m-Y') }}</h3>
+                        <p>{!! $events->intro !!}</p>
+                        <a class="button more orange-background" href="{{ route('eventShow', $events->id) }}">Lees meer</a>
+                    </div>
+                @endforeach
+            @else
+                <p>Geen evenementen gevonden</p>
+            @endif
         </div>
-        <div class="col-xs-12 col-md-4 row-6 highlightBlock">
-            <div class="row image thumbnail" style="background-image: url(http://www.oosterplasdoet.nl/wp-content/uploads/2016/03/IMG_6991-e1465718742680.jpg)"></div>
-            <h3 class="orange title">BAGGERLOOP 2016</h3>
-            <h3 class="orange date">20/3/2016</h3>
-            <p>Baggerloop is een jaarlijks evenement dat georganiseerd wordt in samenwerking met â€˜S-PORT. Basisschool scholieren van diverse scholen lopen op vrijdagochtend een rondje rond de Oosterplas en moeten daarbij allerlei obstakels trotseren.</p>
-        </div>
-        <div class="col-xs-12 col-md-4 row-6 highlightBlock">
-            <div class="row image thumbnail" style="background-image: url(http://www.oosterplasdoet.nl/wp-content/uploads/2016/03/IMG_6892-e1465718042625.jpg)"></div>
-            <h3 class="orange title">komend evenement</h3>
-            <h3 class="orange date">9/7/17</h3>
-            <p>Dit jaar liepen er weer ongeveer 650 leerlingen mee. Het was opnieuw een groot succes.
-
-                Het weer was mooi en de kinderen enthousiast. Voor meer fotoâ€™s kunt u terecht op onze facebook pagina. OosterplasDOET!</p>
-        </div>
-    </div>
 </div>
-    <div class="banner row-4 orange-background" >
+    <div class="banner row-3 orange-background" >
         <h1 class="white">Nieuws</h1>
     </div>
     <div class="container">
@@ -80,8 +76,8 @@
                     <div class="col-xs-12 col-md-4 row-6 highlightBlock">
 
                         <div class="row image thumbnail" style="background-image: url({{ asset('/img/nieuws/' . $news->img) }})"></div>
-                        <h3 class="orange title">{{ $news->title }}</h3>
-                        <h3 class="orange date">{{ Carbon::createFromFormat('Y-m-d H:i:s', $news->created_at)->format('H:i d-m-Y') }}</h3>
+                        <h2 class="orange title">{{ $news->title }}</h2>
+                        <h3 class="orange date">Geplaatst op: &nbsp; &nbsp; &nbsp;{{ Carbon::createFromFormat('Y-m-d H:i:s', $news->created_at)->format('H:i d-m-Y') }}</h3>
                         <p>{!! $news->intro !!}</p>
                         <a class="button more orange-background" href="{{ route('newsShow', $news->id) }}">Lees meer</a>
                     </div>
@@ -91,8 +87,8 @@
             @endif
         </div>
     </div>
-    <div class="banner row-4 orange-background" >
-        <h1 class="white">Socialmedia/Contact</h1>
+    <div class="banner row-3 orange-background" >
+        <h1 class="white"><a id="contact"></a>Socialmedia/Contact</h1>
     </div>
     <div class="container social-contact">
         <div class="row">
@@ -127,36 +123,90 @@
     <!-- font awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-	<!-- Footer by Gerjan -->
-	
-	<style>
-		.koptext{
-			font-size: 20px;
-		}
 
-		.tablefooter{
-			width: 99%;
-			margin-left: 30px;
-			margin-right: 30px;
-			margin-top: 15px;
-		}
-		.tablefooter tr td {
-			color: #fff;
-			font-family: "Bebas Neue";
-		}
-		.tablefooter tr td a {
-			color: #fff;
-			letter-spacing: 0.5px;
-		}
-		#indexFooter{
-			height: auto;
-			background-size: cover;
-			background-color: #ef6c33;
-		}
+    <!-- REAL Footer by Alex -->
+    <div class="rainbow no-padding">
+        <img class="home-img" src="img/rainbow.png">
+    </div>
 
-	</style>
+	<div class="col-xs-12 col-md-12 green-background" id="indexFooter">
+        <div class="all green-background">
+            <div class="col-md-1"></div>
+            <div class="col-md-3">
+                <div class="address">
+                    <h3>Stichting OosterplasDOET!<br></h3>
+                    <div class="infolist">
+                        <h3><br>Adres:</h3>
+                        <dd class="address">
+                            <p translate="no" itemscope="" itemtype="http://schema.org/PostalAddress">
+                                Vincent van Goghlaan 1 Rosmalen<br>
+                                5246 GA
+                            </p>
+                        </dd>
+                    </div>
+                    <h3>RSIN nummer:</h3> 855080528<br>
+                    <h3>KvK nummer:</h3> 63073579<br>
+                    <h3>SBI-code:</h3> 88993<br>
+                    <h3><br>Emailadres:</h3>oosterplasdoet@gmail.com<br><br>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="links col-md-auto">
+                    <h3>Over OosterplasDOET!:</h3>
+                    <a href="/about">Over ons</a><br>
+                    <a href="/about">Duurzaamheid</a><br>
+                    <a href="/about">Verantwoord</a><br>
+                </div></div>
+            <div class="col-md-2">
+                <div class="links col-md-auto">
+                    <h3>Vragen aan OosterplasDOET!:</h3>
+                    <a href="/about">Contact</a><br>
+                    <a href="/about">FAQ</a><br>
+                    <a href="/about">Cookies</a><br>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="links col-md-auto">
+                    <h3>Officiële stukken:</h3>
+                    <a href="/about">Notulen</a><br>
+                    <a href="/about">Doelstelling</a><br>
+                    <a href="/about">Beleidsplan</a><br>
+                    <a href="/about">Activiteitenplan</a><br>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
+        <!-- Footer by Gerjan
 
-	<div class="col-xs-12 col-md-12" id="indexFooter">
+        <style>
+            .koptext{
+                font-size: 20px;
+            }
+
+            .tablefooter{
+                width: 99%;
+                margin-left: 30px;
+                margin-right: 30px;
+                margin-top: 15px;
+            }
+            .tablefooter tr td {
+                color: #fff;
+                font-family: "Bebas Neue";
+            }
+            .tablefooter tr td a {
+                color: #fff;
+                letter-spacing: 0.5px;
+            }
+            #indexFooter{
+                height: auto;
+                background-size: cover;
+                background-color: #ef6c33;
+            }
+
+        </style>
+
+
 		<table class="tablefooter">
 			<tr>
 				<td class="koptext">Over OosterplasDOET!</td>
@@ -166,12 +216,12 @@
 			</tr>
 			<tr>
 				<td><a href="#">Wie zijn wij</a></td>
-				<td><a href="#">Contact</a></td>
+				<td><a href="#contact">Contact</a></td>
 				<td><a href="#">Verantwoord</a></td>
 				<td><a href="#">Doelstelling</a></td>
 			</tr>
 			<tr>
-				<td><a href="#">Even voorstellen</a></td>
+				<td><a href="{{ url('/about') }}">Even voorstellen</a></td>
 				<td><a href="#">FAQ</a></td>
 				<td><a href="#">Duurzaamheid</a></td>
 				<td><a href="#">Beleidsplan</a></td>
@@ -201,13 +251,7 @@
 				<td><a href="#">Notulen</a></td>
 			</tr>
 		</table>
-	</div>
-	
-	
 
+        2 story points
 
-
-
-
-
-@endsection
+        -->

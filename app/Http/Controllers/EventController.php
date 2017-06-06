@@ -25,7 +25,7 @@ class EventController extends Controller {
      */
     public function index() {
         try {
-            $events = Event::all();
+            $events = Event::orderBy('startDate')->get();
         } catch (ModelNotFoundException $e) {
             abort(404);
         }

@@ -5,8 +5,7 @@
 
     <link rel="stylesheet" href="{{ ('css/app.css') }}">
     <div class="banner row-6 orange-background" style="background-image: url(http://www.oosterplasdoet.nl/wp-content/uploads/2016/03/cropped-IMG_7544-1.jpg);">
-
-        <h1 class="white">Gunbanen</h1>
+        <h1 class="white">Studie begeleiding</h1>
     </div>
     @if (Session::has('success'))
         <div class="container">
@@ -26,7 +25,7 @@
             </div>
         </div>
     @endif
-    {{--<form action="gunbanen/signup/">--}}
+    {{--<form action="studiebegeleiding/signup/">--}}
     {{--<button class="btn btn-lg orange-background white pull-right" type="submit" style="margin-top: 10px; border-radius: 0; top: calc(50vh)">Aanmelden</button>--}}
     {{--</form>--}}
 

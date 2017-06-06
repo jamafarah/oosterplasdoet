@@ -7,7 +7,7 @@
 </div>
 <div class="container raised">
     <div class="slogan">
-        <h1 class="vague-green">Nieuws</h1>
+        <h1 class="orange">Nieuws</h1>
     </div>
 
     @if (count($news) > 0)

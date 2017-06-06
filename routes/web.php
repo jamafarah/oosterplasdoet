@@ -70,13 +70,7 @@ Route::get('nieuws/{id}', 'NewsController@show')->name('newsShow');
 Route::get('underconstruction', function () {
     return view('underconstruction');
 });
-Route::get('bewoners', function () {
-    return view('underconstruction');
-});
 
-Route::get('about', function () {
-    return view('underconstruction');
-});
 Route::get('studiebegeleiding', 'StudiebegeleidingController@Index');
 Route::get('partners', 'PartnerController@getIndex');
 
