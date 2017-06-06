@@ -18,5 +18,9 @@
             <li><a href="{{ url('/events') }}">Activiteiten</a></li>
             <li><a href="{{ url('/about') }}">Over ons</a></li>
         </ul>
+        <div class="rainbow">
+            <img class="menu-img" src="img/rainbow.png">
+        </div>
     </nav>
+
 </header>
