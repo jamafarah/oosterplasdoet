@@ -32,7 +32,9 @@
           })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
           ga('create', 'UA-100835583-1', 'auto');
+          ga('create', 'UA-100835583-1', 'auto', 'clientTracker');
           ga('send', 'pageview');
+          ga('clientTracker.send', 'pageview');
 
         </script>
     </body>
