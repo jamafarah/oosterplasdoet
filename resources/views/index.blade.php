@@ -106,7 +106,7 @@
                     </a>
                     <p>Volg ons op op faceboook en twitter om op de hoogte te blijven</p>
 
-                    <p>Schrijf in voor nieuwsbrieF:</p>
+                    <p>Schrijf je in voor onze nieuwsbrief:</p>
                     {!! Form::open(array('route' => 'mail_signup', 'class' => 'feedback-form')) !!}
                         <label for="name">naam: </label>
                     {!! Form::text('Naam', null,
