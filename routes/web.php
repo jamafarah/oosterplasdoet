@@ -157,4 +157,7 @@ Route::post('updatesponsor',
 Route::post('/addsponsor',
     ['as' => 'createsponsor', 'uses' => 'SponsorController@createsponsor']);
 
+Route::post('index/mail',
+    ['as' => 'mail_signup', 'uses' => 'MailListController@signup']);
+
 
