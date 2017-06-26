@@ -21,7 +21,6 @@
            <li><a href="{{ url('/') }}">home</a></li>
             <li><a href="{{ url('/bedrijven') }}">bedrijven</a></li>
             <li><a href="{{ url('/activiteiten') }}">activiteiten kalender</a></li>
-            <li><a href="{{ url('/bewoners') }}">buurtbewoners</a></li>
             <li><a href="{{ url('/about') }}">over ons</a></li>
         </ul>
     </nav>

@@ -12,6 +12,8 @@
             <div class="row">
                 <div class="alert alert-success">
                     {{ Session::get('success') }}
+
+
                 </div>
             </div>
         </div>
@@ -25,11 +27,9 @@
             </div>
         </div>
     @endif
-    {{--<form action="studiebegeleiding/signup/">--}}
-    {{--<button class="btn btn-lg orange-background white pull-right" type="submit" style="margin-top: 10px; border-radius: 0; top: calc(50vh)">Aanmelden</button>--}}
-    {{--</form>--}}
 
-    <a class="btn btn-lg orange-background white pull-right" type="submit" style="margin-top: 10px; border-radius: 0; top: calc(50vh)" href="studiebegeleiding/signup"><b>Aanmelden</b></a>
+    <a class="btn btn-lg orange-background sign-up-button white pull-right" type="submit" style="margin-top: 10px; border-radius: 0; top: calc(50vh)" href="studiebegeleiding/signup"><b>Aanmelden</b></a>
+
     <div class="container">
         {!! $content->content !!}
 
@@ -37,4 +37,13 @@
 
     <!-- font awesoem -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+@endsection
+@section('script')
+    <script>
+        $(function(){
+           $(".sign-up-button").click(function(){
+               $(".sign-up-block").toggleClass("active");
+           });
+        });
+    </script>
 @endsection

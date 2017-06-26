@@ -215,6 +215,19 @@ i.fa.fa-5x:hover {
   border-left: 2px solid #ef6c33; }
 
 
+.sign-up-block {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 100vh;
+  padding: 50px;
+  transition: .2s ease-in-out;
+}
+
+.sign-up-block.active{
+  top: 50px;
+}
+
 .signup-form-input {
   text-decoration-color: white;
   background-color: #ef6c33;

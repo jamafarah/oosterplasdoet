@@ -101,6 +101,21 @@
                         <i class="fa fa-5x fa-twitter"></i>
                     </a>
                     <p>Volg ons op op faceboook en twitter om op de hoogte te blijven</p>
+
+                    <p>Schrijf je in voor onze nieuwsbrief:</p>
+                    {!! Form::open(array('route' => 'mail_signup', 'class' => 'feedback-form')) !!}
+                        <label for="name">naam: </label>
+                    {!! Form::text('Naam', null,
+                array('required',
+                      'class'=>'',
+                      'placeholder'=>'Naam')) !!}
+                        <label for="email">email: </label>
+                    {!! Form::text('Email', null,
+                array('required',
+                      'class'=>'',
+                      'placeholder'=>'Email')) !!}
+                        <input class="orange-background" value="verzend" type="submit">
+                    {!! Form::close() !!}
                 </div>
             </div>
             <div class="col-xs-12 col-md-6 row-5">
