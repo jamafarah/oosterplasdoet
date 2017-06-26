@@ -16,7 +16,6 @@
                 </ul>
             </li>
             <li><a href="{{ url('/events') }}">activiteiten</a></li>
-            <li><a href="{{ url('/bewoners') }}">buurtbewoners</a></li>
             <li><a href="{{ url('/about') }}">over ons</a></li>
         </ul>
     </nav>
