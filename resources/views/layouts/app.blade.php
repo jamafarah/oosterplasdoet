@@ -21,7 +21,7 @@
 
 
 </head>
-<body class="vague-green-background">
+<body>
 @include('layouts.navigation')
         @yield('content')
         @yield('script')
