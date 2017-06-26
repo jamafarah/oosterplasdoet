@@ -21,17 +21,14 @@ class IndexController extends Controller
     public function getIndex() {
         try {
             $events = Event::orderByDesc('created_at')->limit(3)->get();
-        } catch (ModelNotFoundException $e) {
-            abort(404);
-        }
-        try {
             $news = News::orderByDesc('created_at')->limit(3)->get();
+            $gunbanen = Websitetext::where('textarea_name', 'homegunbanen')->firstOrFail();
+            $studiebegeleiding = Websitetext::where('textarea_name', 'homestudiebegeleiding')->firstOrFail();
+            $content = WebsiteText::where('textarea_name', 'homepagina')->firstOrFail();
+
+            return view('index')->with(compact('events','news','content','gunbanen','studiebegeleiding'));
         } catch (ModelNotFoundException $e) {
             abort(404);
         }
-        $gunbanen = Websitetext::where('textarea_name', 'homegunbanen')->firstOrFail();
-        $studiebegeleiding = Websitetext::where('textarea_name', 'homestudiebegeleiding')->firstOrFail();
-        $content = WebsiteText::where('textarea_name', 'homepagina')->firstOrFail();
-        return view('index')->with(compact('events','news','content','gunbanen','studiebegeleiding'));
     }
 }

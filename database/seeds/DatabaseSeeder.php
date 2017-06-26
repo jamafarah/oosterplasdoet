@@ -17,5 +17,6 @@ class DatabaseSeeder extends Seeder
         $this->call(WebsiteTextSeeder::class);
         $this->call(PartnerSeeder::class);
         $this->call(UsersTableSeeder::class);
+        $this->call(HomepageWebsiteTextSeeder::class);
     }
 }
