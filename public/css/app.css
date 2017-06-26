@@ -164,11 +164,11 @@ ul.nav li.dropdown:hover ul.dropdown-menu{
 
 .highlightBlock {
   box-sizing: border-box;
-  border: 1px solid;
-  border-top: none;
+  border: 1px solid #ef6c33;
+  /* border-top: none; */
   border-right: none; }
   .highlightBlock:last-of-type {
-    border-right: 1px solid; }
+    border-right: 1px solid #ef6c33; }
   .highlightBlock .thumbnail {
     border-radius: 0;
     border: none;
