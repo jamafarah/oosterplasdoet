@@ -29,8 +29,7 @@
         </div>
     @endif
 
-    <a class="btn btn-lg orange-background sign-up-button white pull-right" type="submit" style="margin-top: 10px; border-radius: 0; top: calc(50vh)" href="#"><b>Aanmelden</b></a>
-    @include('studiesignup')
+    <a class="btn btn-lg orange-background sign-up-button white pull-right" type="submit" style="margin-top: 10px; border-radius: 0; top: calc(50vh)" href="studiebegeleiding/signup"><b>Aanmelden</b></a>
 
     <div class="container">
         {!! $content->content !!}

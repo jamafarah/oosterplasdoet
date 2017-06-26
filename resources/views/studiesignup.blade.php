@@ -37,7 +37,7 @@
             </div>
         </div>
     @endif
-    <div class="sign-up-block orange-background">
+    <div class="container orange-background">
         <a class="btn btn-lg orange-background white pull-right" type="submit" style="margin-top: 10px; border-radius: 0;" href="../studiebegeleiding"><b>Terug</b></a>
         <h1 class="white">Inschrijven</h1>
 
